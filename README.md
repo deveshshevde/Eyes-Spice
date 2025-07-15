@@ -13,7 +13,7 @@
 * ESP32-S3R8 
 * W25Q16JVSSIQ
 
-
+'''
 import os
 import struct
 
@@ -93,4 +93,5 @@ if __name__ == "__main__":
             for h in headers:
                 print(f"  -> {h}")
     else:
-        print("File '.ninja_deps' not found.")
+        print("File '.ninja_deps' not found.")'''
+        
