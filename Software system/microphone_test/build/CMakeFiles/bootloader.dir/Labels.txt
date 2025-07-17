@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/CMakeFiles/bootloader
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/CMakeFiles/bootloader.rule
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/CMakeFiles/bootloader-complete.rule
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,6 +1,7 @@
 #include "esp_camera.h"
 #include "esp_log.h"
 #include "esp_http_server.h"
+#include "esp_http_client.h"
 #include "esp_wifi.h"
 #include "nvs_flash.h"
 #include "freertos/FreeRTOS.h"
@@ -9,9 +10,9 @@
 
 #define TAG "CAMERA_STREAM"
 
-// Replace with your actual Wi-Fi credentials
-#define WIFI_SSID "ee"
-#define WIFI_PASS "12345678"
+// Wi-Fi credentials
+#define WIFI_SSID "Airtel_7774031837"
+#define WIFI_PASS "air52604"
 
 // LED GPIO
 #define LED_GPIO_NUM 21
@@ -22,7 +23,6 @@
 #define XCLK_GPIO_NUM    10
 #define SIOD_GPIO_NUM    40
 #define SIOC_GPIO_NUM    39
-
 #define Y9_GPIO_NUM      48
 #define Y8_GPIO_NUM      11
 #define Y7_GPIO_NUM      12
@@ -39,8 +39,7 @@
 esp_err_t stream_handler(httpd_req_t *req) {
     camera_fb_t *fb = NULL;
     esp_err_t res = ESP_OK;
-
-    char *part_header = "Content-Type: image/jpeg\r\nContent-Length: %u\r\n\r\n";
+    const char *part_header = "Content-Type: image/jpeg\r\nContent-Length: %u\r\n\r\n";
 
     res = httpd_resp_set_type(req, "multipart/x-mixed-replace; boundary=frame");
     if (res != ESP_OK) return res;
@@ -70,11 +69,43 @@ esp_err_t stream_handler(httpd_req_t *req) {
         esp_camera_fb_return(fb);
 
         if (res != ESP_OK) break;
-
         vTaskDelay(pdMS_TO_TICKS(50));  // ~20 FPS
     }
 
     return res;
+}
+
+// ==== Photo Capture + Upload Handler ====
+esp_err_t capture_handler(httpd_req_t *req) {
+    camera_fb_t *fb = esp_camera_fb_get();
+    if (!fb) {
+        ESP_LOGE(TAG, "Camera capture failed");
+        httpd_resp_send_500(req);
+        return ESP_FAIL;
+    }
+
+    // HTTP POST config to backend
+    esp_http_client_config_t config = {
+        .url = "http://192.168.1.13:3000/upload",
+        .method = HTTP_METHOD_POST,
+    };
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+
+    esp_http_client_set_header(client, "Content-Type", "image/jpeg");
+    esp_http_client_set_post_field(client, (const char *)fb->buf, fb->len);
+
+    esp_err_t err = esp_http_client_perform(client);
+    if (err == ESP_OK) {
+        ESP_LOGI(TAG, "Image sent to server. Status = %d", esp_http_client_get_status_code(client));
+        httpd_resp_sendstr(req, "Image captured and sent");
+    } else {
+        ESP_LOGE(TAG, "Failed to send image to server: %s", esp_err_to_name(err));
+        httpd_resp_send_500(req);
+    }
+
+    esp_http_client_cleanup(client);
+    esp_camera_fb_return(fb);
+    return ESP_OK;
 }
 
 // ==== HTTP Server Setup ====
@@ -91,7 +122,16 @@ httpd_handle_t start_webserver(void) {
             .user_ctx  = NULL
         };
         httpd_register_uri_handler(server, &stream_uri);
+
+        httpd_uri_t capture_uri = {
+            .uri       = "/capture-request",
+            .method    = HTTP_GET,
+            .handler   = capture_handler,
+            .user_ctx  = NULL
+        };
+        httpd_register_uri_handler(server, &capture_uri);
     }
+
     return server;
 }
 
@@ -167,7 +207,7 @@ void app_main() {
     start_webserver();
     ESP_LOGI(TAG, "HTTP MJPEG Stream available at http://<ESP_IP>/stream");
 
-    // Optional: Blink LED to show status
+    // Optional: Blink LED
     gpio_config_t io_conf = {
         .pin_bit_mask = 1ULL << LED_GPIO_NUM,
         .mode = GPIO_MODE_OUTPUT,

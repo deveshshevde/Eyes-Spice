@@ -153,6 +153,51 @@ esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: \
  /home/devesh/Desktop/esp-idf/components/http_parser/http_parser.h \
  /home/devesh/Desktop/esp-idf/components/esp_event/include/esp_event.h \
  /home/devesh/Desktop/esp-idf/components/esp_event/include/esp_event_base.h \
+ /home/devesh/Desktop/esp-idf/components/esp_http_client/include/esp_http_client.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/port/esp32xx/include/sys/socket.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/include/lwip/sockets.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/opt.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/port/include/lwipopts.h \
+ /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/unistd.h \
+ /home/devesh/Desktop/esp-idf/components/newlib/platform_include/sys/unistd.h \
+ /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/unistd.h \
+ /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/fcntl.h \
+ /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/_default_fcntl.h \
+ /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/stat.h \
+ /home/devesh/Desktop/esp-idf/components/newlib/platform_include/sys/ioctl.h \
+ /home/devesh/Desktop/esp-idf/components/newlib/platform_include/sys/poll.h \
+ /home/devesh/Desktop/esp-idf/components/esp_system/include/esp_task.h \
+ /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_random.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/port/include/sntp/sntp_get_set_time.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/port/include/sockets_ext.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/port/freertos/include/arch/sys_arch.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/debug.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/arch.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/port/esp32xx/include/arch/cc.h \
+ /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/errno.h \
+ /home/devesh/Desktop/esp-idf/components/newlib/platform_include/sys/errno.h \
+ /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/errno.h \
+ /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/ctype.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/ip6_zone.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/netif.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/err.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/pbuf.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/stats.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/mem.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/memp.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/priv/memp_std.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/priv/memp_priv.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/priv/mem_priv.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
+ /home/devesh/Desktop/esp-idf/components/newlib/platform_include/net/if.h \
+ /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/if_api.h \
  /home/devesh/Desktop/esp-idf/components/esp_wifi/include/esp_wifi.h \
  /home/devesh/Desktop/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
  /home/devesh/Desktop/esp-idf/components/esp_wifi/include/esp_wifi_types_generic.h \

@@ -1,0 +1,277 @@
+Command: make -j 6 all
+info: INFO: Symbol OV7670_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:3
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:3
+info: INFO: Symbol OV7725_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:10
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:10
+info: INFO: Symbol NT99141_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:17
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:17
+info: INFO: Symbol OV2640_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:24
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:24
+info: INFO: Symbol OV3660_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:31
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:31
+info: INFO: Symbol OV5640_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:38
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:38
+info: INFO: Symbol GC2145_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:45
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:45
+info: INFO: Symbol GC032A_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:52
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:52
+info: INFO: Symbol GC0308_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:59
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:59
+info: INFO: Symbol BF3005_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:66
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:66
+info: INFO: Symbol BF20A6_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:73
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:73
+info: INFO: Symbol SC101IOT_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:80
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:80
+info: INFO: Symbol SC101IOT_720P_15FPS_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:95
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:95
+info: INFO: Symbol SC101IOT_VGA_25FPS_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:99
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:99
+info: INFO: Symbol SC030IOT_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:105
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:105
+info: INFO: Symbol SC031GS_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:112
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:112
+info: INFO: Symbol HM1055_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:120
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:120
+info: INFO: Symbol HM0360_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:127
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:127
+info: INFO: Symbol MEGA_CCM_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:134
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:134
+info: INFO: Symbol SCCB_HARDWARE_I2C_DRIVER_LEGACY defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:148
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:148
+info: INFO: Symbol SCCB_HARDWARE_I2C_DRIVER_NEW defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:150
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:150
+info: INFO: Symbol SCCB_HARDWARE_I2C_PORT0 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:159
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:159
+info: INFO: Symbol SCCB_HARDWARE_I2C_PORT1 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:161
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:161
+info: INFO: Symbol SCCB_CLK_FREQ defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:166
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:166
+info: INFO: Symbol GC_SENSOR_WINDOWING_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:182
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:182
+info: INFO: Symbol GC_SENSOR_SUBSAMPLE_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:184
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:184
+info: INFO: Symbol CAMERA_TASK_STACK_SIZE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:188
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:188
+info: INFO: Symbol CAMERA_CORE0 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:200
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:200
+info: INFO: Symbol CAMERA_CORE1 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:202
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:202
+info: INFO: Symbol CAMERA_NO_AFFINITY defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:204
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:204
+info: INFO: Symbol CAMERA_DMA_BUFFER_SIZE_MAX defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:209
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:209
+info: INFO: Symbol CAMERA_JPEG_MODE_FRAME_SIZE_AUTO defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:223
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:223
+info: INFO: Symbol CAMERA_JPEG_MODE_FRAME_SIZE_CUSTOM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:229
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:229
+info: INFO: Symbol CAMERA_JPEG_MODE_FRAME_SIZE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:236
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:236
+info: INFO: Symbol CAMERA_CONVERTER_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:244
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:244
+info: INFO: Symbol LCD_CAM_CONV_BT601_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:258
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:258
+info: INFO: Symbol LCD_CAM_CONV_BT709_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:260
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:260
+info: INFO: Symbol LCD_CAM_CONV_FULL_RANGE_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:264
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:264
+info: INFO: Symbol LCD_CAM_ISR_IRAM_SAFE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:276
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:276
+info: INFO: Choice SC101_REGS_SELECT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:87
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:87
+info: INFO: Choice SCCB_HARDWARE_I2C_DRIVER_SELECTION defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:141
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:141
+info: INFO: Choice SCCB_HARDWARE_I2C_PORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:155
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:155
+info: INFO: Choice GC_SENSOR_WINDOW_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:174
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:174
+info: INFO: Choice CAMERA_TASK_PINNED_TO_CORE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:194
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:194
+info: INFO: Choice CAMERA_JPEG_MODE_FRAME_SIZE_OPTION defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:217
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:217
+info: INFO: Choice CAMERA_CONV_PROTOCOL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:251
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:251
+info: INFO: Symbol OV7670_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:3
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:3
+info: INFO: Symbol OV7725_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:10
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:10
+info: INFO: Symbol NT99141_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:17
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:17
+info: INFO: Symbol OV2640_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:24
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:24
+info: INFO: Symbol OV3660_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:31
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:31
+info: INFO: Symbol OV5640_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:38
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:38
+info: INFO: Symbol GC2145_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:45
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:45
+info: INFO: Symbol GC032A_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:52
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:52
+info: INFO: Symbol GC0308_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:59
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:59
+info: INFO: Symbol BF3005_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:66
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:66
+info: INFO: Symbol BF20A6_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:73
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:73
+info: INFO: Symbol SC101IOT_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:80
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:80
+info: INFO: Symbol SC101IOT_720P_15FPS_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:95
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:95
+info: INFO: Symbol SC101IOT_VGA_25FPS_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:99
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:99
+info: INFO: Symbol SC030IOT_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:105
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:105
+info: INFO: Symbol SC031GS_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:112
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:112
+info: INFO: Symbol HM1055_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:120
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:120
+info: INFO: Symbol HM0360_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:127
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:127
+info: INFO: Symbol MEGA_CCM_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:134
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:134
+info: INFO: Symbol SCCB_HARDWARE_I2C_DRIVER_LEGACY defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:148
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:148
+info: INFO: Symbol SCCB_HARDWARE_I2C_DRIVER_NEW defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:150
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:150
+info: INFO: Symbol SCCB_HARDWARE_I2C_PORT0 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:159
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:159
+info: INFO: Symbol SCCB_HARDWARE_I2C_PORT1 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:161
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:161
+info: INFO: Symbol SCCB_CLK_FREQ defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:166
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:166
+info: INFO: Symbol GC_SENSOR_WINDOWING_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:182
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:182
+info: INFO: Symbol GC_SENSOR_SUBSAMPLE_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:184
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:184
+info: INFO: Symbol CAMERA_TASK_STACK_SIZE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:188
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:188
+info: INFO: Symbol CAMERA_CORE0 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:200
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:200
+info: INFO: Symbol CAMERA_CORE1 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:202
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:202
+info: INFO: Symbol CAMERA_NO_AFFINITY defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:204
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:204
+info: INFO: Symbol CAMERA_DMA_BUFFER_SIZE_MAX defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:209
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:209
+info: INFO: Symbol CAMERA_JPEG_MODE_FRAME_SIZE_AUTO defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:223
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:223
+info: INFO: Symbol CAMERA_JPEG_MODE_FRAME_SIZE_CUSTOM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:229
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:229
+info: INFO: Symbol CAMERA_JPEG_MODE_FRAME_SIZE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:236
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:236
+info: INFO: Symbol CAMERA_CONVERTER_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:244
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:244
+info: INFO: Symbol LCD_CAM_CONV_BT601_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:258
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:258
+info: INFO: Symbol LCD_CAM_CONV_BT709_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:260
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:260
+info: INFO: Symbol LCD_CAM_CONV_FULL_RANGE_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:264
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:264
+info: INFO: Symbol LCD_CAM_ISR_IRAM_SAFE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:276
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:276
+info: INFO: Choice SC101_REGS_SELECT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:87
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:87
+info: INFO: Choice SCCB_HARDWARE_I2C_DRIVER_SELECTION defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:141
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:141
+info: INFO: Choice SCCB_HARDWARE_I2C_PORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:155
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:155
+info: INFO: Choice GC_SENSOR_WINDOW_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:174
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:174
+info: INFO: Choice CAMERA_TASK_PINNED_TO_CORE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:194
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:194
+info: INFO: Choice CAMERA_JPEG_MODE_FRAME_SIZE_OPTION defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:217
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:217
+info: INFO: Choice CAMERA_CONV_PROTOCOL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp_camera/Kconfig:251
+    /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/components/esp32-camera/Kconfig:251

@@ -1,0 +1,206 @@
+Command: /home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/devesh/Desktop/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/build/camera_test.elf /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/build/bootloader/bootloader.elf -m '/home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/devesh/Desktop/esp-idf/tools/idf.py'
+[0;32mI (00:28:02.915) camera: Detected camera at address=0x30[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42007ed3
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1598
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2fe0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v6.0-dev-1002-gbfe5caf58f 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Jul 16 2025 20:56:32[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=23c70h (146544) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=00033c98 vaddr=3fc9af00 size=07038h ( 28728) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=0003acd8 vaddr=40374000 size=05340h ( 21312) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=b1afch (727804) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=000f1b24 vaddr=40379340 size=11b20h ( 72480) load[0m
+[0;32mI (270) esp_image: segment 5: paddr=0010364c vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (280) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (280) boot: Disabling RNG early entropy source...[0m
+[0;32mI (291) cpu_start: Multicore app[0m
+[0;32mI (300) cpu_start: Pro cpu start user code[0m
+[0;32mI (300) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (300) app_init: Application information:[0m
+[0;32mI (300) app_init: Project name:     camera_test[0m
+[0;32mI (304) app_init: App version:      9a3eac4-dirty[0m
+[0;32mI (309) app_init: Compile time:     Jul 17 2025 18:27:10[0m
+[0;32mI (314) app_init: ELF file SHA256:  e2fc4bc14...[0m
+[0;32mI (318) app_init: ESP-IDF:          v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (323) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (327) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (331) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (335) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (341) heap_init: At 3FCA6A80 len 00042C90 (267 KiB): RAM[0m
+[0;32mI (347) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (352) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (357) heap_init: At 600FE020 len 00001FB8 (7 KiB): RTCRAM[0m
+[0;32mI (363) spi_flash: detected chip: gd[0m
+[0;32mI (365) spi_flash: flash io: dio[0m
+[0;32mI (369) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (375) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (00:28:03.305) main_task: Started on CPU0[0m
+[0;32mI (00:28:03.315) main_task: Calling app_main()[0m
+[0;32mI (00:28:03.336) pp: pp rom version: e7ae62f[0m
+[0;32mI (00:28:03.337) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (451) wifi:wifi driver task: 3fced4c8, prio:23, stack:6656, core=0[0m
+[0;32mI (461) wifi:wifi firmware version: 956d811[0m
+[0;32mI (461) wifi:wifi certification version: v7.0[0m
+[0;32mI (461) wifi:config NVS flash: enabled[0m
+[0;32mI (461) wifi:config nano formatting: disabled[0m
+[0;32mI (461) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (471) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (471) wifi:Init management short buffer num: 32[0m
+[0;32mI (471) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (481) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (481) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (491) wifi:Init static rx buffer num: 10[0m
+[0;32mI (491) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (00:28:03.390) wifi_init: rx ba win: 6[0m
+[0;32mI (00:28:03.393) wifi_init: accept mbox: 6[0m
+[0;32mI (00:28:03.396) wifi_init: tcpip mbox: 32[0m
+[0;32mI (00:28:03.400) wifi_init: udp mbox: 6[0m
+[0;32mI (00:28:03.404) wifi_init: tcp mbox: 6[0m
+[0;32mI (00:28:03.407) wifi_init: tcp tx win: 5760[0m
+[0;32mI (00:28:03.411) wifi_init: tcp rx win: 5760[0m
+[0;32mI (00:28:03.415) wifi_init: tcp mss: 1440[0m
+[0;32mI (00:28:03.419) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (00:28:03.423) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (00:28:03.429) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (581) wifi:mode : sta (d8:3b:da:47:1c:50)[0m
+[0;32mI (581) wifi:enable tsf[0m
+[0;32mI (00:28:03.473) CAMERA_STREAM: Connecting to Wi-Fi...[0m
+[0;32mI (00:28:03.476) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (00:28:03.477) cam_hal: cam init ok[0m
+[0;32mI (00:28:03.479) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (591) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (601) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (00:28:03.495) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (00:28:03.503) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (00:28:03.504) camera: Detected OV2640 camera[0m
+[0;32mI (00:28:03.508) camera: Detected camera at address=0x30[0m
+[0;32mI (641) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (651) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (00:28:03.588) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 3[0m
+[0;32mI (00:28:03.589) cam_hal: Allocating 3840 Byte frame buffer in OnBoard RAM[0m
+[0;32mI (00:28:03.595) cam_hal: Allocating 3840 Byte frame buffer in OnBoard RAM[0m
+[0;32mI (00:28:03.602) cam_hal: cam config ok[0m
+[0;32mI (00:28:03.605) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (751) wifi:connected with Airtel_7774031837, aid = 4, channel 6, BW20, bssid = f4:f6:47:40:33:96[0m
+[0;32mI (751) wifi:security: WPA2-PSK, phy: bgn, rssi: -54[0m
+[0;32mI (751) wifi:pm start, type: 1[0m
+
+[0;32mI (761) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (761) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (771) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (00:28:03.707) CAMERA_STREAM: Camera initialized[0m
+[0;32mI (00:28:03.711) CAMERA_STREAM: HTTP MJPEG Stream available at http://<ESP_IP>/stream[0m
+[0;32mI (3541) wifi:<ba-add>idx:0 (ifx:0, f4:f6:47:40:33:96), tid:0, ssn:0, winSize:64[0m
+[0;32mI (00:28:07.841) esp_netif_handlers: sta ip: 192.168.1.16, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (11571) wifi:<ba-add>idx:1 (ifx:0, f4:f6:47:40:33:96), tid:6, ssn:2, winSize:64[0m
+[0;33mW (00:30:17.380) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (00:30:17.381) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (00:30:17.433) CAMERA_STREAM: Image sent to server. Status = 500[0m
+[0;32mI (00:30:17.497) CAMERA_STREAM: Image sent to server. Status = 500[0m
+[0;32mI (00:30:17.570) CAMERA_STREAM: Image sent to server. Status = 500[0m
+[0;32mI (00:30:17.623) CAMERA_STREAM: Image sent to server. Status = 500[0m
+[0;32mI (00:30:17.669) CAMERA_STREAM: Image sent to server. Status = 500[0m
+[0;33mW (00:30:54.831) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (00:30:54.831) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (00:30:54.868) CAMERA_STREAM: Image sent to server. Status = 500[0m
+[0;33mW (00:33:08.631) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (00:33:08.632) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (00:33:08.703) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:33:23.510) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;33mW (00:33:53.309) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (00:33:53.310) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (00:33:53.345) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:37:27.502) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:37:52.022) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:06.676) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:31.042) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:33.110) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:34.332) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:35.216) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:35.676) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:35.758) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:35.829) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:35.878) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:35.936) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:35.994) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:36.057) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:36.143) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:36.465) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:36.853) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:36.930) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:37.006) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:37.334) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (00:40:37.456) CAMERA_STREAM: Image sent to server. Status = 200[0m
+[0;32mI (525) wifi:wifi firmware version: 956d811[0m
+[0;32mI (525) wifi:wifi certification version: v7.0[0m
+[0;32mI (525) wifi:config NVS flash: enabled[0m
+[0;32mI (525) wifi:config nano formatting: disabled[0m
+[0;32mI (525) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (535) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (535) wifi:Init management short buffer num: 32[0m
+[0;32mI (535) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (545) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (545) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (555) wifi:Init static rx buffer num: 10[0m
+[0;32mI (555) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (00:00:00.202) wifi_init: rx ba win: 6[0m
+[0;32mI (00:00:00.205) wifi_init: accept mbox: 6[0m
+[0;32mI (00:00:00.209) wifi_init: tcpip mbox: 32[0m
+[0;32mI (00:00:00.212) wifi_init: udp mbox: 6[0m
+[0;32mI (00:00:00.216) wifi_init: tcp mbox: 6[0m
+[0;32mI (00:00:00.220) wifi_init: tcp tx win: 5760[0m
+[0;32mI (00:00:00.224) wifi_init: tcp rx win: 5760[0m
+[0;32mI (00:00:00.228) wifi_init: tcp mss: 1440[0m
+[0;32mI (00:00:00.231) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (00:00:00.236) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (00:00:00.241) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (645) wifi:mode : sta (d8:3b:da:47:1c:50)[0m
+[0;32mI (645) wifi:enable tsf[0m
+[0;32mI (00:00:00.287) CAMERA_STREAM: Connecting to Wi-Fi...[0m
+[0;32mI (00:00:00.290) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (00:00:00.291) cam_hal: cam init ok[0m
+[0;32mI (00:00:00.292) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (655) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (665) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (00:00:00.308) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (00:00:00.315) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (00:00:00.317) camera: Detected OV2640 camera[0m
+[0;32mI (00:00:00.321) camera: Detected camera at address=0x30[0m
+[0;32mI (685) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (695) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (00:00:00.397) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 3[0m
+[0;32mI (00:00:00.398) cam_hal: Allocating 3840 Byte frame buffer in OnBoard RAM[0m
+[0;32mI (00:00:00.404) cam_hal: Allocating 3840 Byte frame buffer in OnBoard RAM[0m
+[0;32mI (00:00:00.411) cam_hal: cam config ok[0m
+[0;32mI (00:00:00.414) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (795) wifi:connected with Airtel_7774031837, aid = 4, channel 6, BW20, bssid = f4:f6:47:40:33:96[0m
+[0;32mI (795) wifi:security: WPA2-PSK, phy: bgn, rssi: -53[0m
+[0;32mI (805) wifi:pm start, type: 1[0m
+
+[0;32mI (805) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (815) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (845) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (00:00:00.510) CAMERA_STREAM: Camera initialized[0m
+[0;32mI (00:00:00.513) CAMERA_STREAM: HTTP MJPEG Stream available at http://<ESP_IP>/stream[0m
+[0;32mI (3635) wifi:<ba-add>idx:0 (ifx:0, f4:f6:47:40:33:96), tid:0, ssn:1, winSize:64[0m
+[0;32mI (00:00:04.463) esp_netif_handlers: sta ip: 192.168.1.16, mask: 255.255.255.0, gw: 192.168.1.1[0m

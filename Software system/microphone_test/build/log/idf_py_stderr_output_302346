@@ -1,0 +1,26 @@
+Command: make -j 6 flash
+In file included from /home/devesh/Desktop/esp-idf/components/nvs_flash/include/nvs.h:13,
+                 from /home/devesh/Desktop/esp-idf/components/nvs_flash/include/nvs_flash.h:13,
+                 from /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/main/microphone_test.c:5:
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/main/microphone_test.c: In function 'i2s_init':
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/main/microphone_test.c:58:21: error: too few arguments to function 'i2s_channel_init_pdm_rx_mode'; expected 2, have 1
+   58 |     ESP_ERROR_CHECK(i2s_channel_init_pdm_rx_mode(rx_chan));
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/devesh/Desktop/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+In file included from /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/main/microphone_test.c:11:
+/home/devesh/Desktop/esp-idf/components/esp_driver_i2s/include/driver/i2s_pdm.h:192:11: note: declared here
+  192 | esp_err_t i2s_channel_init_pdm_rx_mode(i2s_chan_handle_t handle, const i2s_pdm_rx_config_t *pdm_rx_cfg);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/main/microphone_test.c:81:21: error: implicit declaration of function 'i2s_channel_config_pdm_rx'; did you mean 'i2s_channel_reconfig_pdm_rx_gpio'? [-Wimplicit-function-declaration]
+   81 |     ESP_ERROR_CHECK(i2s_channel_config_pdm_rx(rx_chan, &pdm_cfg));
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/devesh/Desktop/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+make[3]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj] Error 1
+make[2]: *** [CMakeFiles/Makefile2:5957: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:2540: CMakeFiles/flash.dir/rule] Error 2
+make: *** [Makefile:286: flash] Error 2

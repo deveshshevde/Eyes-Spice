@@ -1,0 +1,415 @@
+Command: /home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/devesh/Desktop/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/microphone_test.elf /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader/bootloader.elf -m '/home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/devesh/Desktop/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;33m--- esp-idf-monitor 1.7.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40056f5c: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037cce9: [0;33mpanic_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037ccb1: [0;33mesp_system_abort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403851d5: [0;33mabort[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x420026df: [0;33mmspi_init[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m598[0m
+[0m--- 0x4037565f: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m924[0m
+[0m--- 0x403ccace: [0;33mset_cache_and_start_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1155[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m890[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m800[0m
+[0m--- 0x403ccf11: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m602[0m
+[0m--- 0x403c8995: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m62[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037ce89: [0;33mesp_restart_noos[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/devesh/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m

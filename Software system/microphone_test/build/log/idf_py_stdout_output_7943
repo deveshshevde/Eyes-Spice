@@ -1,0 +1,1289 @@
+Command: /home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/devesh/Desktop/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/microphone_test.elf /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader/bootloader.elf -m '/home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/devesh/Desktop/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;32mI (110) esp_image: segment 1: paddr=0002ee60 vaddr=3fc9ac00 sizeD (596) i2s_pdm: The rx channel on I2S0 has been initialized to PDM RX mode successfully[0m
+D (596) i2s_commESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x29 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381d9b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1598
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f44
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v6.0-dev-1002-gbfe5caf58f 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Jul 17 2025 19:38:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1ee38h (126520) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002ee60 vaddr=3fc9ac00 size=011b8h (  4536) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=9a540h (632128) map[0m
+[0;32mI (225) esp_image: segment 3: paddr=000ca568 vaddr=3fc9bdb8 size=03a84h ( 14980) load[0m
+[0;32mI (229) esp_image: segment 4: paddr=000cdff4 vaddr=40374000 size=16af4h ( 92916) load[0m
+[0;32mI (249) esp_image: segment 5: paddr=000e4af0 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (259) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (260) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Multicore app[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) app_init: Application information:[0m
+[0;32mI (279) app_init: Project name:     microphone_test[0m
+[0;32mI (283) app_init: App version:      9a3eac4-dirty[0m
+[0;32mI (288) app_init: Compile time:     Jul 17 2025 19:39:38[0m
+[0;32mI (293) app_init: ELF file SHA256:  0d17cee8d...[0m
+[0;32mI (297) app_init: ESP-IDF:          v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (303) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (307) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (311) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (314) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (321) heap_init: At 3FCA3B00 len 00045C10 (279 KiB): RAM[0m
+[0;32mI (326) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (331) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (336) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (342) spi_flash: detected chip: gd[0m
+[0;32mI (345) spi_flash: flash io: dio[0m
+[0;33mW (348) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (360) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (366) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (383) main_task: Calling app_main()[0m
+[0;32mI (403) pp: pp rom version: e7ae62f[0m
+[0;32mI (403) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (413) wifi:wifi driver task: 3fced4c8, prio:23, stack:6656, core=0[0m
+[0;32mI (423) wifi:wifi firmware version: 956d811[0m
+[0;32mI (423) wifi:wifi certification version: v7.0[0m
+[0;32mI (423) wifi:config NVS flash: enabled[0m
+[0;32mI (423) wifi:config nano formatting: disabled[0m
+[0;32mI (423) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (433) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (433) wifi:Init management short buffer num: 32[0m
+[0;32mI (433) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (443) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (443) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (453) wifi:Init static rx buffer num: 10[0m
+[0;32mI (453) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (453) wifi_init: rx ba win: 6[0m
+[0;32mI (463) wifi_init: accept mbox: 6[0m
+[0;32mI (463) wifi_init: tcpip mbox: 32[0m
+[0;32mI (463) wifi_init: udp mbox: 6[0m
+[0;32mI (473) wifi_init: tcp mbox: 6[0m
+[0;32mI (473) wifi_init: tcp tx win: 5760[0m
+[0;32mI (473) wifi_init: tcp rx win: 5760[0m
+[0;32mI (473) wifi_init: tcp mss: 1440[0m
+[0;32mI (483) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (483) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (493) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (493) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (543) wifi:mode : sta (d8:3b:da:47:1c:50)[0m
+[0;32mI (543) wifi:enable tsf[0m
+[0;32mI (543) MIC_STREAM: Wi-Fi initialized and connected[0m
+D (543) i2s_common: rx channel is registered on I2S0 successfully
+D (543) i2s_common: DMA malloc info: dma_desc_num = 4, dma_desc_buf_size = dma_frame_num * slot_num * data_bit_width = 1024
+D (553) i2s_pdm: Clock division info: [sclk] 160000000 Hz [mdiv] 19 17/32 [mclk] 8192000 Hz [bdiv] 8 [bclk] 1024000 Hz
+[0;32mI (553) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (573) wifi:state: init -> auth (0xb0)[0m
+D (583) i2s_pdm: The rx channel on I2S0 has been initialized to PDM RX mode successfully
+D (583) i2s_common: i2s rx channel enabled
+[0;32mI (593) MIC_STREAM: I2S PDM microphone initialized[0m
+[0;32mI (593) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (603) wifi:state: assoc -> run (0x10)[0m
+[1;31mE (623) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (623) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (623) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (623) MIC_STREAM: Failed to connect to server[0m
+[0;32mI (703) wifi:connected with Airtel_7774031837, aid = 4, channel 6, BW20, bssid = f4:f6:47:40:33:96[0m
+[0;32mI (703) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (713) wifi:pm start, type: 1[0m
+
+[0;32mI (713) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (723) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[1;31mE (733) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (733) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (743) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (743) MIC_STREAM: Failed to connect to server[0m
+[0;32mI (793) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[1;31mE (843) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (843) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (843) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (843) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (953) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (953) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (953) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (953) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (1063) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1063) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1063) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1063) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (1173) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1173) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1173) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1173) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (1283) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1283) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1283) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1283) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (1393) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1393) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1393) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1393) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (1503) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1503) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1503) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1503) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (1613) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1613) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1613) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1613) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (1723) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1723) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1723) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1723) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (1833) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1833) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1833) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1833) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (1943) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1943) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1943) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1943) MIC_STREAM: Failed to connect to server[0m
+E (2053) esp-tls: [sock=54] connect() error: Host is unreachable
+[1;31mE (2053) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2053) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (2053) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (2163) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2163) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2163) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (2163) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (2273) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2273) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2273) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (2273) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (2383) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2383) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2383) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (2383) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (2493) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2493) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2493) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (2493) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (2603) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2603) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2603) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (2603) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (2713) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2713) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2713) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (2713) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (2823) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2823) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2823) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (2823) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (2933) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2933) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2933) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (2933) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (3043) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3043) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3043) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (3043) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (3153) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3153) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3153) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (3153) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (3263) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3263) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3263) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (3263) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (3373) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3373) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3373) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (3373) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (3483) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3483) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3483) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (3483) MIC_STREAM: Failed to connect to server[0m
+[0;32mI (3573) wifi:<ba-add>idx:0 (ifx:0, f4:f6:47:40:33:96), tid:0, ssn:0, winSize:64[0m
+[1;31mE (3593) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3593) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3593) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (3593) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (3703) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3703) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3703) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (3703) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (3813) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3813) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3813) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (3813) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (3923) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3923) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3923) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (3923) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (4033) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4033) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4033) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (4033) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (4143) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4143) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4143) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (4143) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (4253) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4253) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4253) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (4253) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (4363) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4363) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4363) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (4363) MIC_STREAM: Failed to connect to server[0m
+E (4473) esp-tls: [sock=54] connect() error: Host is unreachable
+[1;31mE (4473) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4473) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (4473) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (4583) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4583) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4583) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (4583) MIC_STREAM: Failed to connect to server[0m
+[0;32mI (4603) esp_netif_handlers: sta ip: 192.168.1.16, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4793) wifi:<ba-add>idx:1 (ifx:0, f4:f6:47:40:33:96), tid:6, ssn:2, winSize:64[0m
+[1;31mE (24563) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (24563) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (24573) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (24573) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (24683) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (24683) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (24683) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (24693) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (24813) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (24813) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (24813) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (24823) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (24933) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (24933) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (24933) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (24943) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (25063) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (25063) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (25063) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (25063) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (25173) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (25173) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (25183) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (25183) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (25313) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (25313) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (25313) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (25323) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (25463) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (25463) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (25463) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (25463) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (25603) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (25603) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (25603) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (25613) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (25723) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (25723) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (25723) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (25723) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (25873) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (25873) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (25873) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (25873) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (26033) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (26033) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (26033) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (26043) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (26183) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (26183) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (26193) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (26193) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (26323) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (26323) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (26323) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (26333) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (26543) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (26543) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (26543) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (26543) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (26813) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (26813) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (26813) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (26823) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (26953) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (26953) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (26953) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (26953) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (27223) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (27223) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (27223) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (27223) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (27363) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (27363) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (27363) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (27373) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (27633) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (27633) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (27633) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (27633) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (27773) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (27773) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (27773) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (27783) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (27943) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (27943) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (27943) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (27953) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (28183) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (28183) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (28183) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (28193) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (28593) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (28593) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (28593) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (28593) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (29093) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (29093) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (29093) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (29103) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (29373) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (29373) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (29373) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (29383) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (29503) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (29503) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (29503) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (29503) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (29783) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (29783) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (29793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (29793) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (29913) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (29913) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (29913) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (29923) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (30023) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (30033) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (30033) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (30033) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (30333) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (30333) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (30333) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (30333) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (30603) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (30603) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (30603) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (30613) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (30823) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (30823) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (30833) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (30833) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (31143) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (31153) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (31153) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (31153) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (31423) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (31423) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (31423) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (31433) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (31653) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (31653) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (31653) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (31663) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (31973) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (31973) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (31973) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (31973) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (32143) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (32143) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (32143) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (32153) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (32303) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (32303) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (32303) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (32303) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (32463) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (32463) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (32463) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (32473) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (32793) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (32793) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (32793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (32803) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (33063) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (33063) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (33063) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (33073) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (33203) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (33203) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (33213) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (33213) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (33473) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (33473) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (33473) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (33473) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (33623) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (33623) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (33623) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (33623) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (33873) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (33883) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (33883) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (33883) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (34033) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (34033) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (34033) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (34043) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (34193) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (34193) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (34193) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (34203) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (34393) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (34393) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (34393) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (34393) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (34563) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (34563) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (34563) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (34563) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (34703) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (34703) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (34703) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (34713) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (34853) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (34853) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (34853) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (34853) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (35023) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (35023) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (35023) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (35023) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (35183) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (35183) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (35183) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (35183) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (35413) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (35413) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (35413) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (35423) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (35623) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (35623) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (35623) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (35623) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (36263) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (36273) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (36273) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (36273) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (36573) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (36573) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (36583) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (36583) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (36853) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (36853) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (36853) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (36853) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (36993) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (36993) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (36993) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (36993) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (37253) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (37253) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (37263) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (37263) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (37403) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (37403) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (37403) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (37413) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (37663) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (37663) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (37663) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (37673) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (37813) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (37813) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (37813) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (37823) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (38073) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (38073) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (38073) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (38083) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (38223) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (38223) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (38223) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (38233) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (38503) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (38503) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (38503) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (38513) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (38803) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (38803) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (38803) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (38813) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (38993) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (38993) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (38993) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (39003) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (39413) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (39413) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (39413) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (39413) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (39633) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (39633) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (39633) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (39633) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (39793) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (39793) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (39793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (39793) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (39953) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (39953) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (39953) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (39963) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (40233) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (40233) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (40233) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (40243) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (40453) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (40453) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (40453) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (40453) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (40773) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (40773) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (40773) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (40783) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (41043) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (41043) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (41043) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (41053) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (41363) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (41363) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (41363) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (41373) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (41513) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (41513) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (41513) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (41523) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (41783) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (41783) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (41783) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (41783) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (42013) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (42023) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (42023) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (42023) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (42183) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (42183) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (42183) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (42193) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (42503) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (42513) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (42513) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (42513) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (42833) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (42833) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (42833) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (42833) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (43203) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (43203) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (43203) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (43203) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (43403) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (43413) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (43413) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (43413) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (43713) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (43713) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (43713) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (43723) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (44123) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (44123) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (44123) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (44123) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (44233) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (44233) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (44243) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (44243) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (44563) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (44563) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (44563) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (44563) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (44833) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (44833) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (44833) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (44843) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (44973) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (44973) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (44973) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (44973) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (45243) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (45243) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (45243) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (45253) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (45393) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (45393) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (45393) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (45403) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (45663) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (45663) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (45663) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (45663) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (45803) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (45803) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (45803) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (45803) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (45963) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (45963) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (45963) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (45973) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (46203) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (46203) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (46203) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (46213) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (46353) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (46353) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (46353) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (46363) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (46573) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (46573) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (46573) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (46583) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (46703) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (46703) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (46703) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (46713) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (46993) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (46993) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (46993) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (46993) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (47193) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (47193) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (47193) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (47203) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (47443) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (47443) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (47443) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (47453) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (47703) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (47703) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (47703) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (47713) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (47853) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (47853) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (47853) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (47853) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (48113) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (48113) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (48113) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (48113) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (48263) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (48263) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (48263) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (48273) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (48533) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (48533) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (48533) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (48533) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (48683) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (48683) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (48683) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (48683) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (48933) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (48933) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (48933) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (48943) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (49163) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (49163) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (49163) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (49173) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (49443) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (49443) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (49443) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (49453) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (49583) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (49583) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (49583) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (49583) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (49853) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (49853) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (49853) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (49863) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (49993) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (49993) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (49993) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (49993) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (50263) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (50263) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (50263) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (50273) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (50673) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (50673) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (50683) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (50683) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (50813) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (50813) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (50813) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (50823) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (51083) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (51083) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (51083) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (51083) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (51223) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (51223) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (51223) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (51233) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (51393) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (51393) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (51393) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (51403) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (51593) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (51593) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (51593) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (51593) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (51713) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (51713) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (51723) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (51723) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (52043) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (52043) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (52053) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (52053) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (52313) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (52313) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (52313) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (52323) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (52623) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (52623) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (52623) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (52633) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (52823) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (52823) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (52823) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (52833) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (53033) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (53033) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (53043) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (53043) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (53203) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (53203) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (53203) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (53203) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (53363) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (53363) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (53363) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (53373) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (53643) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (53643) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (53653) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (53653) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (53773) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (53773) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (53773) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (53783) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (54053) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (54053) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (54053) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (54063) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (54193) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (54193) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (54193) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (54193) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (54463) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (54463) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (54463) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (54473) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (54593) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (54593) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (54603) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (54603) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (54773) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (54773) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (54773) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (54783) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (54923) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (54933) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (54933) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (54933) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (55173) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (55183) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (55183) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (55183) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (55483) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (55483) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (55483) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (55493) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (55693) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (55693) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (55693) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (55703) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (55913) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (55913) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (55913) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (55923) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (56243) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (56243) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (56243) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (56253) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (56513) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (56513) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (56513) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (56513) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (56653) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (56653) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (56653) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (56663) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (56823) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (56823) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (56823) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (56823) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (57063) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (57063) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (57063) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (57073) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (57333) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (57333) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (57333) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (57333) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (57473) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (57473) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (57473) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (57483) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (57743) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (57743) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (57743) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (57743) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (57883) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (57893) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (57893) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (57893) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (58143) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (58143) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (58153) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (58153) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (58293) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (58303) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (58303) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (58303) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (58463) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (58463) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (58473) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (58473) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (58793) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (58793) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (58793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (58803) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (59073) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (59073) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (59073) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (59083) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (59203) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (59203) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (59203) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (59213) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (59473) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (59483) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (59483) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (59483) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (59613) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (59613) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (59613) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (59623) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (59883) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (59893) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (59893) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (59893) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (60103) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (60103) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (60113) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (60113) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (60443) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (60443) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (60443) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (60443) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (60703) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (60703) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (60703) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (60713) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (60853) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (60853) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (60853) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (60853) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (61113) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (61113) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (61123) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (61123) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (61433) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (61433) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (61433) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (61433) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (61753) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (61753) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (61763) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (61763) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (62043) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (62043) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (62043) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (62053) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (62253) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (62253) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (62253) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (62263) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (62663) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (62663) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (62663) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (62663) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (62983) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (62993) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (62993) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (62993) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (63263) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (63263) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (63263) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (63273) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (63483) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (63483) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (63483) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (63493) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (63813) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (63813) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (63813) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (63813) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (64083) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (64083) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (64093) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (64093) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (64303) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (64303) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (64303) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (64313) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (64633) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (64633) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (64643) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (64643) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (64903) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (64903) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (64913) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (64913) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (65043) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (65043) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (65043) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (65053) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (65313) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (65313) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (65313) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (65323) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (65453) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (65453) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (65453) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (65463) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (65623) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (65623) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (65633) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (65633) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (65833) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (65833) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (65833) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (65843) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (66133) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (66133) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (66133) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (66143) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (66283) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (66283) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (66283) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (66293) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (66443) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (66453) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (66453) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (66453) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (66773) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (66773) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (66773) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (66783) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (67063) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (67063) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (67063) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (67063) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (67383) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (67383) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (67383) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (67383) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (67683) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (67683) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (67683) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (67693) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (68003) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (68013) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (68013) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (68013) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (68283) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (68283) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (68283) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (68293) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (68713) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (68713) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (68713) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (68723) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (69103) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (69103) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (69103) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (69113) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (69243) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (69243) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (69243) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (69243) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (69513) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (69513) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (69513) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (69523) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (69733) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (69733) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (69743) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (69743) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (70063) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (70063) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (70073) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (70073) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (70333) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (70333) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (70333) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (70343) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (70483) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (70483) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (70483) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (70483) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (70753) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (70763) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (70763) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (70763) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (71053) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (71053) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (71053) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (71063) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (71223) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (71223) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (71223) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (71223) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (71383) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (71383) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (71383) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (71383) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (71713) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (71713) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (71713) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (71713) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (71973) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (71973) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (71973) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (71983) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (72203) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (72203) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (72203) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (72213) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (72613) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (72613) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (72613) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (72623) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (72993) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (72993) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (72993) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (73003) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (73113) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (73113) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (73113) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (73113) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (73413) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (73413) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (73413) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (73413) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (73713) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (73713) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (73713) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (73723) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (73853) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (73853) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (73853) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (73853) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (74123) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (74123) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (74123) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (74133) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (74253) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (74263) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (74263) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (74263) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (74443) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (74443) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (74443) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (74443) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (74753) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (74753) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (74753) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (74763) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (75083) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (75083) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (75083) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (75083) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (75353) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (75353) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (75353) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (75363) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (75573) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (75573) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (75573) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (75583) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (75983) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (75983) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (75983) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (75993) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (76273) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (76273) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (76283) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (76283) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (76483) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (76483) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (76483) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (76493) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (76723) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (76733) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (76733) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (76733) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (77093) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (77093) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (77093) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (77093) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (77223) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (77223) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (77223) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (77223) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (77503) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (77503) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (77503) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (77513) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (77633) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (77633) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (77633) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (77633) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (78013) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (78013) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (78013) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (78023) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (78123) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (78123) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (78123) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (78133) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (78453) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (78453) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (78453) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (78463) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (78733) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (78733) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (78733) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (78733) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (78953) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (78953) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (78953) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (78963) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (79243) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (79243) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (79243) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (79253) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (79363) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (79363) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (79363) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (79363) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (79693) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (79693) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (79693) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (79693) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (79963) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (79963) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (79963) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (79963) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (80183) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (80183) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (80183) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (80193) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (80593) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (80593) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (80593) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (80603) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (80883) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (80883) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (80883) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (80893) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (81003) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (81003) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (81003) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (81013) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (81333) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (81333) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (81343) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (81343) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (81603) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (81603) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (81603) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (81603) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (81913) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (81913) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (81913) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (81923) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (82153) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (82153) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (82153) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (82163) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (82423) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (82423) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (82423) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (82423) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (82733) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (82733) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (82733) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (82743) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (82933) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (82933) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (82933) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (82933) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (83153) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (83153) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (83153) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (83153) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (83473) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (83473) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (83473) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (83483) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (83853) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (83853) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (83853) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (83853) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (83973) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (83973) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (83983) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (83983) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (84383) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (84383) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (84383) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (84383) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (84673) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (84673) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (84673) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (84673) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (84793) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (84793) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (84793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (84793) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (85123) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (85123) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (85123) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (85123) MIC_STREAM: Failed to connect to server[0m
+[1;31mE (85393) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (85393) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (85393) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (85393) MIC_STREAM: Failed to connect to server[0m

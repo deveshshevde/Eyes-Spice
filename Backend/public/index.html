@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ESP32 Camera Control</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f4f4f4;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: #007BFF;
+      color: white;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #status {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ESP32 Camera Control Panel</h1>
+
+  <button id="captureBtn">📸 Capture Image</button>
+  <div id="status"></div>
+
+  <script>
+    document.getElementById("captureBtn").addEventListener("click", async () => {
+      const statusDiv = document.getElementById("status");
+      statusDiv.textContent = "📡 Sending capture request...";
+      try {
+        const response = await fetch('/request-capture');
+        const text = await response.text();
+        statusDiv.textContent = "✅ " + text;
+      } catch (error) {
+        statusDiv.textContent = "❌ Failed to send capture request: " + error.message;
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+Command: make -j 6 all
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/camera_test/main/main.c:4:10: fatal error: esp_http_client.h: No such file or directory
+    4 | #include "esp_http_client.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:6072: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
