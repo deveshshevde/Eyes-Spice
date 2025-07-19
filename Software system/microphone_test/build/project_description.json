@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "microphone_test",
-    "project_version":    "9a3eac4-dirty",
+    "project_version":    "4567af0-dirty",
     "project_path":       "/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test",
     "idf_path":           "/home/devesh/Desktop/esp-idf",
     "build_dir":          "/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build",
@@ -1236,7 +1236,7 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "driver", "esp_http_client", "esp_wifi", "esp_event", "esp_netif", "nvs_flash" ],
+            "priv_reqs": [ "driver", "esp_http_client", "esp_http_server", "esp_wifi", "esp_event", "esp_netif", "nvs_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/esp-idf/main/libmain.a",
@@ -2950,7 +2950,7 @@
             "dir": "/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "driver", "esp_http_client", "esp_wifi", "esp_event", "esp_netif", "nvs_flash" ],
+            "priv_reqs": [ "driver", "esp_http_client", "esp_http_server", "esp_wifi", "esp_event", "esp_netif", "nvs_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "." ]

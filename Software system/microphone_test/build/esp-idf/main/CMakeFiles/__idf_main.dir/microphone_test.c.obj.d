@@ -197,6 +197,8 @@ esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj: \
  /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
  /home/devesh/Desktop/esp-idf/components/newlib/platform_include/net/if.h \
  /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/if_api.h \
+ /home/devesh/Desktop/esp-idf/components/esp_http_server/include/esp_http_server.h \
+ /home/devesh/Desktop/esp-idf/components/http_parser/http_parser.h \
  /home/devesh/Desktop/esp-idf/components/esp_driver_i2s/include/driver/i2s_pdm.h \
  /home/devesh/Desktop/esp-idf/components/hal/include/hal/i2s_types.h \
  /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
@@ -204,4 +206,9 @@ esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj: \
  /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
  /home/devesh/Desktop/esp-idf/components/esp_driver_i2s/include/driver/i2s_common.h \
  /home/devesh/Desktop/esp-idf/components/esp_driver_i2s/include/driver/i2s_types.h \
- /home/devesh/Desktop/esp-idf/components/esp_common/include/esp_types.h
+ /home/devesh/Desktop/esp-idf/components/esp_common/include/esp_types.h \
+ /home/devesh/Desktop/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
+ /home/devesh/Desktop/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
+ /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
+ /home/devesh/Desktop/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
+ /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_etm.h

@@ -1,1 +1,3 @@
-9a3eac49ae6cc8e8825ed84257f9726c38f6c182
+0000000000000000000000000000000000000000 42068a70d42bb3e67c94148f3a7e85bf15571cd8 devesh <devesh@devesh.(none)> 1752679437 +0530	clone: from https://github.com/deveshshevde/Eyes-Spice.git
+42068a70d42bb3e67c94148f3a7e85bf15571cd8 9a3eac49ae6cc8e8825ed84257f9726c38f6c182 deveshshevde <deveshshevade1990@gmail.com> 1752679855 +0530	commit: camera test on wifi good status
+9a3eac49ae6cc8e8825ed84257f9726c38f6c182 4567af0beb4ac6532c2118fe985f819d331f33ed deveshshevde <deveshshevade1990@gmail.com> 1752765353 +0530	commit: audio data fetch with dram + pic get request worked

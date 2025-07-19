@@ -1,0 +1,448 @@
+Command: /home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/devesh/Desktop/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/microphone_test.elf /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader/bootloader.elf -m '/home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/devesh/Desktop/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x21 (DOWNLOAD(USB/UART0))
+Saved PC:0x40041a79
+waiting for download
+D (781) cpu_start: calling init function: 0x420144dc
+D (786) cpu_start: calling init function: 0x4037b798
+D (790) cpu_start: calling init function: 0x420036ec
+D (795) cpu_start: calling init function: 0x4204eb50 on core: 0
+V (801) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (807) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xC02
+D (814) intr_alloc: Connected src 59 to int 2 (cpu 0)
+D (819) cpu_start: calling init function: 0x42093190 on core: 0
+D (825) cpu_start: calling init function: 0x420051d0 on core: 0
+[0;32mI (830) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (837) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+D (843) cpu_start: calling init function: 0x42002480 on core: 0
+D (849) cpu_start: calling init function: 0x42009168 on core: 0
+D (854) cpu_start: calling init function: 0x4200248c on core: 0
+V (860) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (866) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E
+D (874) intr_alloc: Connected src 79 to int 3 (cpu 0)
+D (879) app_start: Starting scheduler on CPU0
+V (883) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (883) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x402
+D (883) intr_alloc: Connected src 57 to int 5 (cpu 0)
+V (883) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args
+V (893) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x40E
+D (893) intr_alloc: Connected src 80 to int 0 (cpu 1)
+D (903) app_start: Starting scheduler on CPU1
+V (903) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args
+V (913) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x402
+D (923) intr_alloc: Connected src 58 to int 1 (cpu 1)
+[0;32mI (883) main_task: Started on CPU0[0m
+D (933) heap_init: New heap initialised at 0x3fce9710
+V (933) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (943) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE
+D (943) intr_alloc: Connected src 52 to int 8 (cpu 0)
+[0;32mI (953) main_task: Calling app_main()[0m
+V (953) partition: Loading the partition table
+V (963) mmap: actual_mapped_len is 0x10000
+V (963) calculated md5: 0x3fca7918   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|
+V (973) stored md5: 0x3c0d8070   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|
+V (983) partition: Partition table MD5 verified
+D (1003) esp_netif_lwip: LwIP stack has been initialized
+D (1003) esp_netif_lwip: esp-netif has been successfully initialized
+D (1003) event: running task for loop 0x3fceb440
+D (1003) event: created task for loop 0x3fceb440
+D (1013) event: created event loop 0x3fceb440
+D (1013) esp_netif_lwip: check: remote, if=0x3fca78f0 fn=0x420120f4
+V (1023) esp_netif_objects: esp_netif_add_to_list_unsafe 0x3fcec380
+D (1033) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 1)
+D (1033) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+[0;32mI (1043) pp: pp rom version: e7ae62f[0m
+[0;32mI (1043) net80211: net80211 rom version: e7ae62f[0m
+D (1053) nvs: nvs_open_from_partition misc 1
+[0;32mI (1063) wifi:wifi driver task: 3fced444, prio:23, stack:6656, core=0[0m
+V (1063) esp_adapter: thread sem create: sem=0x3fced5a8
+V (1063) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1073) efuse: BLK1 REG1 [8-15], len=8 bits
+D (1073) efuse: BLK1 REG1 [0-7], len=8 bits
+D (1073) efuse: BLK1 REG0 [24-31], len=8 bits
+D (1083) efuse: BLK1 REG0 [16-23], len=8 bits
+D (1083) efuse: BLK1 REG0 [8-15], len=8 bits
+D (1093) efuse: BLK1 REG0 [0-7], len=8 bits
+D (1093) nvs: nvs_open_from_partition nvs.net80211 1
+D (1103) nvs: nvs_get opmode 1
+D (1103) nvs: nvs_get_str_or_blob sta.ssid
+D (1103) nvs: nvs_get sta.authmode 1
+D (1113) nvs: nvs_get_str_or_blob sta.pswd
+D (1113) nvs: nvs_get_str_or_blob sta.pmk
+D (1113) nvs: nvs_get sta.chan 1
+D (1123) nvs: nvs_get auto.conn 1
+D (1123) nvs: nvs_get bssid.set 1
+D (1123) nvs: nvs_get_str_or_blob sta.bssid
+D (1133) nvs: nvs_get sta.lis_intval 2
+D (1133) nvs: nvs_get sta.phym 1
+D (1133) nvs: nvs_get sta.phybw 1
+D (1133) nvs: nvs_get_str_or_blob sta.apsw
+D (1143) nvs: nvs_get_str_or_blob sta.apinfo
+D (1143) nvs: nvs_get sta.scan_method 1
+D (1153) nvs: nvs_get sta.sort_method 1
+D (1153) nvs: nvs_get sta.minrssi 1
+D (1153) nvs: nvs_get sta.minauth 1
+D (1163) nvs: nvs_get sta.pmf_e 1
+D (1163) nvs: nvs_get sta.pmf_r 1
+D (1163) nvs: nvs_get sta.btm_e 1
+D (1173) nvs: nvs_get sta.rrm_e 1
+D (1173) nvs: nvs_get sta.mbo_e 1
+D (1173) nvs: nvs_get_str_or_blob ap.ssid
+D (1183) nvs: nvs_get_str_or_blob ap.passwd
+D (1183) nvs: nvs_get_str_or_blob ap.pmk
+D (1183) nvs: nvs_get ap.chan 1
+D (1193) nvs: nvs_get ap.authmode 1
+D (1193) nvs: nvs_get ap.hidden 1
+D (1193) nvs: nvs_get ap.max.conn 1
+D (1203) nvs: nvs_get bcn.interval 2
+D (1203) nvs: nvs_get ap.phym 1
+D (1203) nvs: nvs_get ap.phybw 1
+D (1203) nvs: nvs_get ap.sndchan 1
+D (1213) nvs: nvs_get ap.pmf_e 1
+D (1213) nvs: nvs_get ap.pmf_r 1
+D (1213) nvs: nvs_get ap.p_cipher 1
+D (1223) nvs: nvs_get lorate 1
+D (1223) nvs: nvs_get_str_or_blob country
+D (1223) nvs: nvs_get ap.ftm_r 1
+D (1233) nvs: nvs_get sta.ft 1
+D (1233) nvs: nvs_get sta.owe 1
+D (1233) nvs: nvs_get sta.trans_d 1
+D (1233) nvs: nvs_get sta.sae_h2e 1
+D (1243) nvs: nvs_get sta.sae_pk_mode 1
+D (1243) nvs: nvs_get sta.bss_retry 1
+D (1253) nvs: nvs_get_str_or_blob sta.owe_data
+D (1253) nvs: nvs_get sta.he_dcm 1
+D (1253) nvs: nvs_get sta.he_dcm_c_tx 1
+D (1263) nvs: nvs_get sta.he_dcm_c_rx 1
+D (1263) nvs: nvs_get sta.he_mcs9_d 1
+D (1263) nvs: nvs_get sta.he_su_b_d 1
+D (1273) nvs: nvs_get sta.he_su_b_f_d 1
+D (1273) nvs: nvs_get sta.he_mu_b_f_d 1
+D (1273) nvs: nvs_get sta.he_cqi_f_d 1
+D (1283) nvs: nvs_get_str_or_blob sta.sae_h2e_id
+D (1283) nvs: nvs_get ap.sae_h2e 1
+D (1283) nvs: nvs_get_str_or_blob ap.pmk_info
+D (1293) nvs: nvs_get nan.phym 1
+D (1293) nvs: nvs_get sta.pwr_reset 1
+D (1293) nvs: nvs_get band_mode 1
+D (1303) nvs: nvs_get sta.phym5g 1
+D (1303) nvs: nvs_get ap.phym5g 1
+D (1303) nvs: nvs_get sta.phybw5g 1
+D (1313) nvs: nvs_get ap.phybw5g 1
+D (1313) nvs: nvs_get ap.sndchan5g 1
+D (1313) nvs: nvs_get ap.chan5g 1
+D (1323) nvs: nvs_get ap.chanisset 1
+D (1323) nvs: nvs_get ap.chan5gisset 1
+D (1323) nvs: nvs_get sta.lowrate 1
+D (1333) nvs: nvs_get ap.lowrate 1
+D (1333) nvs: nvs_get sta.rssi_5g_adj 1
+D (1333) nvs: nvs_get ap.csa_count 1
+D (1343) nvs: nvs_get ap.dtim_period 1
+D (1343) nvs: nvs_get ap.trans_d 1
+D (1343) nvs: nvs_get ap.sae_ext 1
+D (1353) nvs: nvs_get ap.bssmaxidle 2
+D (1353) nvs: nvs_get ap.pro_keep_a 1
+D (1353) nvs: nvs_get ap.gtk_rekey 2
+D (1363) nvs: nvs_get sta.vht_su_b_d 1
+D (1363) nvs: nvs_get sta.vht_mu_b_d 1
+D (1363) nvs: nvs_get sta.vht_mcs8_e 1
+D (1373) nvs: nvs_set ap.sndchan 1 1
+[0;32mI (1373) wifi:wifi firmware version: 956d811[0m
+[0;32mI (1373) wifi:wifi certification version: v7.0[0m
+[0;32mI (1383) wifi:config NVS flash: enabled[0m
+[0;32mI (1383) wifi:config nano formatting: disabled[0m
+[0;32mI (1393) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1393) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1393) wifi:Init management short buffer num: 32[0m
+[0;32mI (1403) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1403) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1413) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1413) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1423) wifi:Init dynamic rx buffer num: 32[0m
+D (1423) wifi:Reset scan defaults in ms : min,max,passive,chan_dwell :(0,120,360,30)
+V (1433) wifi:hint=255, act_dur=<0,120>, pas_dur=360, nchans=14 history_num=0
+V (1433) esp_adapter: thread sem get: sem=0x3fced5a8
+[0;32mI (1443) wifi_init: rx ba win: 6[0m
+[0;32mI (1443) wifi_init: accept mbox: 6[0m
+[0;32mI (1443) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1453) wifi_init: udp mbox: 6[0m
+[0;32mI (1453) wifi_init: tcp mbox: 6[0m
+[0;32mI (1453) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1463) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1463) wifi_init: tcp mss: 1440[0m
+[0;32mI (1463) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1473) wifi_init: WiFi RX IRAM OP enabled[0m
+V (1473) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1483) nvs: nvs_get opmode 1
+V (1483) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1483) wifi:clear blacklist
+[0;33mW (1493) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+V (1493) esp_adapter: thread sem get: sem=0x3fced5a8
+[0;32mI (1503) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+D (1503) phy_init: loading PHY init data from application binary
+D (1513) nvs: nvs_open_from_partition phy 0
+D (1513) nvs: nvs_get cal_version 4
+V (1523) phy_init: phy_get_rf_cal_version: 701
+D (1523) nvs: nvs_get_str_or_blob cal_mac
+D (1533) efuse: BLK1 REG1 [8-15], len=8 bits
+D (1533) efuse: BLK1 REG1 [0-7], len=8 bits
+D (1533) efuse: BLK1 REG0 [24-31], len=8 bits
+D (1543) efuse: BLK1 REG0 [16-23], len=8 bits
+D (1543) efuse: BLK1 REG0 [8-15], len=8 bits
+D (1553) efuse: BLK1 REG0 [0-7], len=8 bits
+D (1553) nvs: nvs_get_str_or_blob cal_data
+D (1563) nvs: nvs_close 3
+D (1563) efuse: BLK1 REG1 [8-15], len=8 bits
+D (1563) efuse: BLK1 REG1 [0-7], len=8 bits
+D (1563) efuse: BLK1 REG0 [24-31], len=8 bits
+D (1573) efuse: BLK1 REG0 [16-23], len=8 bits
+D (1573) efuse: BLK1 REG0 [8-15], len=8 bits
+D (1583) efuse: BLK1 REG0 [0-7], len=8 bits
+D (1603) temperature_sensor: range changed, change to index 2
+V (1613) wifi:ht20 freq=2412, chan=1
+D (1613) wifi:filter: set rx policy=0
+[0;32mI (1613) wifi:mode : sta (d8:3b:da:47:1c:50)[0m
+[0;32mI (1613) wifi:enable tsf[0m
+D (1613) wifi:filter: set rx policy=1
+D (1613) wifi:connect status 0 -> 0
+D (1623) event: no handlers have been registered for event WIFI_EVENT:43 posted to loop 0x3fceb440
+D (1633) event: running post WIFI_EVENT:2 with handler 0x42014770 and context 0x3fcec59c on loop 0x3fceb440
+D (1643) wifi_init_default: wifi_start esp-netif:0x3fcec380 event-id2
+D (1643) wifi_init_default: WIFI mac address: d8 3b da 47 1c 50
+V (1653) esp_adapter: thread sem create: sem=0x3fcafddc
+V (1653) esp_adapter: thread sem get: sem=0x3fcafddc
+D (1663) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x4201187c
+D (1663) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+V (1663) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1673) esp_netif_handlers: esp_netif action has started with netif0x3fcec380 from event_id=2
+D (1683) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x42012320
+D (1693) esp_netif_lwip: esp_netif_start_api 0x3fcec380
+D (1693) wifi:Start wifi connectD (1693) esp_netif_lwip: esp_netif_get_hostname esp_netif:0x3fcec380
+
+D (1703) wifi:connect status 0 -> 0D (1703) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+
+D (1713) wifi:connect chan=0
+D (1713) wifi:first chan=11
+D (1723) wifi:connect status 0 -> 1
+D (1723) wifi:filter: set rx policy=3
+D (1723) wifi:clear scan ap list
+D (1723) wifi:start scan: type=0x50f, priority=2, cb=0x420392c0, arg=0x0, ss_state=0x1, time=1746671, index=0
+V (1733) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (1743) wifi:perform scan: ss_state=0x9, chan<11,0>, dur<0,120>
+V (1753) wifi:change: chan<11,0>, dur<0,120>
+V (1753) wifi:ht20 freq=2462, chan=11
+V (1753) wifi:enter start op, arg=0x3fca21ec
+V (1763) wifi:scan operation: state=0x3, chan<11,0>, arg=0x3fca21ec, status=0
+V (1763) wifi:scan specific ssid=Airtel_gaur_2614
+V (1773) wifi:start max timer
+D (1773) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+V (1783) wifi:updated connection retries to 0
+D (1783) wifi:profile match: ss_state=0x7
+V (1793) wifi:scan histroy table is not full yet, add
+V (1793) wifi:add ssid=Airtel_gaur_2614, chan=11 to scan history
+D (1803) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+D (1803) wifi:profile match: ss_state=0x7
+V (1813) wifi:update scan history ssid=Airtel_gaur_2614, channel=11
+D (1813) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+D (1823) wifi:profile match: ss_state=0x7
+V (1823) wifi:update scan history ssid=Airtel_gaur_2614, channel=11
+D (1833) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+D (1833) wifi:profile match: ss_state=0x7
+V (1843) wifi:update scan history ssid=Airtel_gaur_2614, channel=11
+D (1843) wifi:scan end: arg=0x3fca21ec, status=0, ss_state=0x7
+D (1853) wifi:find first mathched ssid, scan done
+V (1853) wifi:back home chan=<1,0>, current chan=<11,0>
+V (1863) wifi:ht20 freq=2412, chan=1
+D (1863) wifi:filter: set rx policy=4
+D (1873) wifi:first chan=1
+V (1873) wifi:scan_done: arg=0x0, status=0, cur_time=1889788, scan_id=128, scan state=0
+V (1883) wifi:call scan_done cb, arg=0x0
+D (1883) wifi:handoff_cb: status=0
+V (1883) wifi:best bss has set.
+D (1893) wifi:ap found, mac=ec:a2:a0:6d:0a:69
+V (1893) wifi:bssid=ec:a2:a0:6d:0a:69, LR=0
+D (1893) wifi:going for connection with bssid=ec:a2:a0:6d:0a:69
+D (1903) wifi:new_bss=0x3fca0f78, cur_bss=0x0, new_chan=<11,0>, cur_chan=1
+D (1913) wifi:filter: set rx policy=5
+[0;32mI (1913) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+V (1923) wifi:ht20 freq=2462, chan=11
+D (1923) wifi:connect_op: status=0, auth=5, cipher=3 
+D (1923) wifi:auth mode is not none
+D (1933) wifi:connect_bss: auth=1, reconnect=0
+[0;32mI (1933) wifi:state: init -> auth (0xb0)[0m
+D (1943) nvs: nvs_get sta.pwr_reset 1
+D (1943) wifi:start 1000ms AUTH timer
+D (1943) wifi:clear scan ap list
+D (1953) event: no handlers have been registered for event WIFI_EVENT:43 posted to loop 0x3fceb440
+D (1953) wifi:recv auth: seq=2, status=0, algo=0
+[0;32mI (1963) wifi:state: auth -> assoc (0x0)[0m
+D (1963) nvs: nvs_get sta.pwr_reset 1
+D (1973) wifi:restart connect 1000ms timer for assoc
+[0;32mI (1973) MIC_STREAM: Wi-Fi connected to Airtel_gaur_2614[0m
+D (1983) i2s_common: rx channel is registered on I2S0 successfully
+D (1983) wifi:recv assoc: type=0x10
+D (1983) wifi:filter: set rx policy=6
+[0;32mI (1993) wifi:state: assoc -> run (0x10)[0m
+D (1993) nvs: nvs_get sta.pwr_reset 1
+D (2003) wifi:start 10s connect timer for 4 way handshake
+[0;33mW (2003) i2s_common: dma frame num is out of dma buffer size, limited to 2046[0m
+D (2013) i2s_common: DMA malloc info: dma_desc_num = 4, dma_desc_buf_size = dma_frame_num * slot_num * data_bit_width = 4092
+D (2023) i2s_pdm: Clock division info: [sclk] 160000000 Hz [mdiv] 19 17/32 [mclk] 8192000 Hz [bdiv] 8 [bclk] 1024000 Hz
+D (2033) gdma: new group (0) at 0x3fcb4254
+D (2033) gdma: new pair (0,0) at 0x3fcb42e0
+D (2043) gdma: new rx channel (0,0) at 0x3fcb4218
+V (2043) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (2053) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x80E
+D (2053) intr_alloc: Connected src 66 to int 9 (cpu 0)
+D (2063) gdma: install interrupt service for rx channel (0,0)
+D (2063) i2s_pdm: The rx channel on I2S0 has been initialized to PDM RX mode successfully
+D (2073) i2s_common: i2s rx channel enabled
+V (2083) wifi:wpa_psk start
+V (2083) wifi:wpa_psk handle succeed
+[0;32mI (2083) MIC_STREAM: I2S microphone initialized[0m
+V (2093) wifi:wpa_psk start
+V (2093) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (2093) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE
+D (2103) intr_alloc: Connected src 77 to int 12 (cpu 0)
+D (2113) gdma: new tx channel (0,0) at 0x3fcb4a3c
+D (2113) gdma: new pair (0,1) at 0x3fcb4ab0
+D (2123) gdma: new rx channel (0,1) at 0x3fcb4a74
+V (2123) wifi:wpa_psk handle succeed
+[0;32mI (2133) wifi:connected with Airtel_gaur_2614, aid = 5, channel 11, BW20, bssid = ec:a2:a0:6d:0a:69[0m
+[0;32mI (2133) wifi:security: WPA2-PSK, phy: bgn, rssi: -55[0m
+D (2143) wifi:remove all except ec:a2:a0:6d:0a:69 from rc list
+D (2143) wifi:clear blacklist
+D (2153) nvs: nvs_set sta.chan 1 11
+D (2153) nvs: nvs_set_blob sta.apinfo 700
+D (2153) wifi:filter: set rx policy=7
+[0;32mI (2163) wifi:pm start, type: 1[0m
+
+[0;32mI (2163) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2173) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+D (2183) wifi:Send sta connected event
+D (2183) wifi:connect status 1 -> 5
+D (2183) wifi:obss scan is disabled
+D (2183) wifi:start obss scan: obss scan is stopped
+D (2193) wifi:bcnd: 0 -> 2352
+[0;32mI (2193) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+D (2203) event: running post WIFI_EVENT:4 with handler 0x420147a0 and context 0x3fcec5fc on loop 0x3fceb440
+V (2213) esp_adapter: thread sem get: sem=0x3fcafddc
+D (2213) esp_netif_handlers: esp_netif action connected with netif0x3fcec380 from event_id=4
+D (2223) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x42012554
+D (2233) esp_netif_lwip: esp_netif_up_api esp_netif:0x3fcec380
+D (2233) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+D (2243) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x42011d40
+D (2243) esp_netif_lwip: esp_netif_dhcpc_start_api esp_netif:0x3fcec380
+D (2253) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcec380
+D (2263) esp_netif_lwip: if0x3fcec380 start ip lost tmr: interval=120
+D (2263) esp_netif_lwip: starting dhcp client
+D (2273) wifi:D (2273) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+eb is dhcp or dns sport = 68, dport = 67
+D (2353) wifi:eb is dhcp or dns sport = 68, dport = 67
+[0;32mI (2393) wifi:<ba-add>idx:0 (ifx:0, ec:a2:a0:6d:0a:69), tid:0, ssn:3, winSize:64[0m
+D (3593) esp_netif_lwip: esp_netif_internal_dhcpc_cb lwip-netif:0x3fcec410
+D (3593) esp_netif_lwip: check: local, if=0x3fcec380 fn=0x42012998
+D (3593) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcec380
+V (3593) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcec380
+D (3603) esp_netif_lwip: if0x3fcec380 ip changed=1
+D (3603) event: running post IP_EVENT:0 with handler 0x420145bc and context 0x3fcec6d0 on loop 0x3fceb440
+D (3613) wifi_init_default: Got IP wifi default handler entered
+D (3623) esp_netif_handlers: esp_netif action got_ip with netif0x3fcec380 from event_id=0
+[0;32mI (3633) esp_netif_handlers: sta ip: 192.168.1.33, mask: 255.255.255.0, gw: 192.168.1.1[0m
+D (7353) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (7353) esp-tls: host:192.168.1.32: strlen 12
+D (7353) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (7353) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (7743) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (7743) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 160000
+
+
+D (7763) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (9583) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (9583) MIC_STREAM: 🔊 Sent 2s audio: 160000 bytes[0m
+D (9583) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (14253) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (14253) esp-tls: host:192.168.1.32: strlen 12
+D (14253) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (14263) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (14413) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (14413) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 160000
+
+
+D (14423) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (18143) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (18143) MIC_STREAM: 🔊 Sent 2s audio: 160000 bytes[0m
+D (18143) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (22823) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (22823) esp-tls: host:192.168.1.32: strlen 12
+D (22823) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (22823) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (22883) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (22883) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 160000
+
+
+D (22903) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (25483) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (25483) MIC_STREAM: 🔊 Sent 2s audio: 160000 bytes[0m
+D (25493) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (30233) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (30243) esp-tls: host:192.168.1.32: strlen 12
+D (30243) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (30243) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (30363) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (30363) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 160000
+
+
+D (30383) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (31703) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (31703) MIC_STREAM: 🔊 Sent 2s audio: 160000 bytes[0m
+D (31703) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (36373) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (36373) esp-tls: host:192.168.1.32: strlen 12
+D (36383) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (36383) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (36493) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (36493) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 160000
+
+
+D (36503) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (38873) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (38873) MIC_STREAM: 🔊 Sent 2s audio: 160000 bytes[0m
+D (38873) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (43533) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (43533) esp-tls: host:192.168.1.32: strlen 12
+D (43533) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (43543) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (43693) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (43693) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 160000
+
+
+D (43713) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (45873) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (45873) MIC_STREAM: 🔊 Sent 2s audio: 160000 bytes[0m
+D (45873) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440

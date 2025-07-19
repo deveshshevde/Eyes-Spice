@@ -1,0 +1,586 @@
+Command: /home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/devesh/Desktop/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/microphone_test.elf /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader/bootloader.elf -m '/home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/devesh/Desktop/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+V (545) memory_layout: Examining memory region 0x3fce0000 - 0x3fce9710
+D (552) memory_layout: AvailESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1598
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f44
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v6.0-dev-1002-gbfe5caf58f 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Jul 17 2025 20:16:26[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2a088h (172168) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0003a0b0 vaddr=3fc9b000 size=04e28h ( 20008) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0003eee0 vaddr=40374000 size=01138h (  4408) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a5694h (677524) map[0m
+[0;32mI (249) esp_image: segment 4: paddr=000e56bc vaddr=40375138 size=15dbch ( 89532) load[0m
+[0;32mI (269) esp_image: segment 5: paddr=000fb480 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (279) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (279) boot: Disabling RNG early entropy source...[0m
+V (289) mmap: after coalescing, 1 regions are left
+[0;32mI (289) cpu_start: Multicore app[0m
+D (289) cpu_start: Pro cpu up
+D (290) cpu_start: Starting app cpu, entry point is 0x4037544c
+D (0) cpu_start: App cpu up
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_D ER(R30:2 ) cocrlek:  1R TaCc_cSeLOWs_CsLK  cealribrraotiron  vialnuetr:  c3l7r8 6&9 4e4
+a mask is: 0x1f
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 0 access error intr clr & ena mask is: 0x1f
+D (320) cpu_start: calling init function: 0x4200234c on core: 0
+D (324) cpu_start: calling init function: 0x420027ec on core: 0
+[0;32mI (330) cpu_start: Pro cpu start user code[0m
+[0;32mI (333) cpu_start: cpu freq: 160000000 Hz[0m
+D (337) cpu_start: calling init function: 0x4200227c on core: 0
+[0;32mI (343) app_init: Application information:[0m
+[0;32mI (347) app_init: Project name:     microphone_test[0m
+[0;32mI (351) app_init: App version:      4567af0-dirty[0m
+[0;32mI (356) app_init: Compile time:     Jul 18 2025 20:00:04[0m
+[0;32mI (361) app_init: ELF file SHA256:  c02992ef6...[0m
+[0;32mI (365) app_init: ESP-IDF:          v6.0-dev-1002-gbfe5caf58f[0m
+D (371) cpu_start: calling init function: 0x42002360 on core: 0
+[0;32mI (376) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (380) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (384) efuse_init: Chip rev:         v0.2[0m
+D (388) cpu_start: calling init function: 0x42004444 on core: 0
+V (394) memory_layout: reserved range is 0x3c0d9fd0 - 0x3c0d9ff8
+D (399) memory_layout: Checking 6 reserved memory ranges:
+D (404) memory_layout: Reserved memory range 0x3fc84000 - 0x3fc9b000
+D (410) memory_layout: Reserved memory range 0x3fc9b000 - 0x3fca41b0
+D (416) memory_layout: Reserved memory range 0x3fceee34 - 0x3fcf0000
+D (423) memory_layout: Reserved memory range 0x40374000 - 0x4038b000
+D (429) memory_layout: Reserved memory range 0x600fe000 - 0x600fe020
+D (435) memory_layout: Reserved memory range 0x600fffe8 - 0x60100000
+D (441) memory_layout: Building list of available memory regions:
+V (447) memory_layout: Examining memory region 0x3fc88000 - 0x3fc90000
+V (453) memory_layout: Region 0x3fc88000 - 0x3fc90000 inside of reserved 0x3fc84000 - 0x3fc9b000
+V (461) memory_layout: Examining memory region 0x3fc90000 - 0x3fca0000
+V (468) memory_layout: Start of region 0x3fc90000 - 0x3fca0000 overlaps reserved 0x3fc84000 - 0x3fc9b000
+V (477) memory_layout: Region 0x3fc9b000 - 0x3fca0000 inside of reserved 0x3fc9b000 - 0x3fca41b0
+V (485) memory_layout: Examining memory region 0x3fca0000 - 0x3fcb0000
+V (492) memory_layout: Start of region 0x3fca0000 - 0x3fcb0000 overlaps reserved 0x3fc9b000 - 0x3fca41b0
+D (501) memory_layout: Available memory region 0x3fca41b0 - 0x3fcb0000
+V (507) memory_layout: Examining memory region 0x3fcb0000 - 0x3fcc0000
+D (513) memory_layout: Available memory region 0x3fcb0000 - 0x3fcc0000
+V (519) memory_layout: Examining memory region 0x3fcc0000 - 0x3fcd0000
+D (526) memory_layout: Available memory region 0x3fcc0000 - 0x3fcd0000
+V (532) memory_layout: Examining memory region 0x3fcd0000 - 0x3fce0000
+D (538) memory_layout: Available memory region 0x3fcd0000 - 0x3fce0000
+V (544) memory_layout: Examining memory region 0x3fce0000 - 0x3fce9710
+D (551) memory_layout: Available memory region 0x3fce0000 - 0x3fce9710
+V (557) memory_layout: Examining memory region 0x3fce9710 - 0x3fcf0000
+V (563) memory_layout: End of region 0x3fce9710 - 0x3fcf0000 overlaps reserved 0x3fceee34 - 0x3fcf0000
+D (572) memory_layout: Available memory region 0x3fce9710 - 0x3fceee34
+V (579) memory_layout: Examining memory region 0x3fcf0000 - 0x3fcf8000
+D (585) memory_layout: Available memory region 0x3fcf0000 - 0x3fcf8000
+V (591) memory_layout: Examining memory region 0x600fe000 - 0x60100000
+V (597) memory_layout: Start of region 0x600fe000 - 0x60100000 overlaps reserved 0x600fe000 - 0x600fe020
+V (606) memory_layout: End of region 0x600fe020 - 0x60100000 overlaps reserved 0x600fffe8 - 0x60100000
+D (615) memory_layout: Available memory region 0x600fe020 - 0x600fffe8
+[0;32mI (622) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (628) heap_init: New heap initialised at 0x3fca41b0
+[0;32mI (633) heap_init: At 3FCA41B0 len 00045560 (277 KiB): RAM[0m
+[0;32mI (638) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+D (643) heap_init: New heap initialised at 0x3fcf0000
+[0;32mI (648) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+D (653) heap_init: New heap initialised at 0x600fe020
+[0;32mI (658) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+D (663) cpu_start: calling init function: 0x42007b68 on core: 0
+D (669) cpu_start: calling init function: 0x420074ac on core: 0
+D (674) cpu_start: calling init function: 0x42002838 on core: 0
+V (680) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (686) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E
+D (694) intr_alloc: Connected src 39 to int 1 (cpu 0)
+D (699) cpu_start: calling init function: 0x42002848 on core: 0
+D (704) cpu_start: calling init function: 0x42008b7c on core: 0
+D (710) cpu_start: calling init function: 0x42009c58 on core: 0
+D (716) cpu_start: calling init function: 0x4200b740 on core: 0
+D (721) cpu_start: calling init function: 0x42009ed4 on core: 0
+D (727) cpu_start: calling init function: 0x420074b8 on core: 0
+D (733) cpu_start: calling init function: 0x42002854 on core: 0
+V (738) memspi: raw_chip_id: 1740C8
+
+V (742) memspi: chip_id: C84017
+
+V (745) memspi: raw_chip_id: 1740C8
+
+V (748) memspi: chip_id: C84017
+
+D (751) spi_flash: trying chip: issi
+D (754) spi_flash: trying chip: gd
+[0;32mI (757) spi_flash: detected chip: gd[0m
+[0;32mI (761) spi_flash: flash io: dio[0m
+[0;33mW (764) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (776) cpu_start: calling init function: 0x420023fc on core: 0
+D (781) cpu_start: calling init function: 0x4208a040
+D (786) cpu_start: calling init function: 0x420863a8
+D (791) cpu_start: calling init function: 0x42015648
+D (796) cpu_start: calling init function: 0x4037b7b8
+D (800) cpu_start: calling init function: 0x42003af4
+D (805) cpu_start: calling init function: 0x420527ec on core: 0
+V (811) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (817) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xC02
+D (824) intr_alloc: Connected src 59 to int 2 (cpu 0)
+D (829) cpu_start: calling init function: 0x4209a864 on core: 0
+D (835) cpu_start: calling init function: 0x420055d8 on core: 0
+[0;32mI (840) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (847) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+D (853) cpu_start: calling init function: 0x42002888 on core: 0
+D (859) cpu_start: calling init function: 0x42009570 on core: 0
+D (864) cpu_start: calling init function: 0x42002894 on core: 0
+V (870) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (876) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E
+D (884) intr_alloc: Connected src 79 to int 3 (cpu 0)
+D (889) app_start: Starting scheduler on CPU0
+V (893) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (893) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x402
+D (893) intr_alloc: Connected src 57 to int 5 (cpu 0)
+V (893) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args
+V (903) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x40E
+D (903) intr_alloc: Connected src 80 to int 0 (cpu 1)
+D (913) app_start: Starting scheduler on CPU1
+V (913) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args
+V (923) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x402
+D (933) intr_alloc: Connected src 58 to int 1 (cpu 1)
+[0;32mI (893) main_task: Started on CPU0[0m
+D (943) heap_init: New heap initialised at 0x3fce9710
+V (943) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (953) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE
+D (953) intr_alloc: Connected src 52 to int 8 (cpu 0)
+[0;32mI (963) main_task: Calling app_main()[0m
+V (963) partition: Loading the partition table
+V (973) mmap: actual_mapped_len is 0x10000
+V (973) calculated md5: 0x3fca7b08   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|
+V (983) stored md5: 0x3c0e8070   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|
+V (993) partition: Partition table MD5 verified
+D (1013) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+D (1013) esp_netif_lwip: LwIP stack has been initialized
+D (1013) esp_netif_lwip: esp-netif has been successfully initialized
+D (1023) event: running task for loop 0x3fceb440
+D (1023) event: created task for loop 0x3fceb440
+D (1033) event: created event loop 0x3fceb440
+D (1033) esp_netif_lwip: check: remote, if=0x3fca7ae0 fn=0x42013260
+V (1043) esp_netif_objects: esp_netif_add_to_list_unsafe 0x3fcec380
+D (1043) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 1)
+D (1053) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+[0;32mI (1063) pp: pp rom version: e7ae62f[0m
+[0;32mI (1063) net80211: net80211 rom version: e7ae62f[0m
+D (1063) nvs: nvs_open_from_partition misc 1
+[0;32mI (1083) wifi:wifi driver task: 3fced444, prio:23, stack:6656, core=0[0m
+V (1083) esp_adapter: thread sem create: sem=0x3fced5a8
+V (1083) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1083) efuse: BLK1 REG1 [8-15], len=8 bits
+D (1093) efuse: BLK1 REG1 [0-7], len=8 bits
+D (1093) efuse: BLK1 REG0 [24-31], len=8 bits
+D (1103) efuse: BLK1 REG0 [16-23], len=8 bits
+D (1103) efuse: BLK1 REG0 [8-15], len=8 bits
+D (1103) efuse: BLK1 REG0 [0-7], len=8 bits
+D (1113) nvs: nvs_open_from_partition nvs.net80211 1
+D (1113) nvs: nvs_get opmode 1
+D (1123) nvs: nvs_get_str_or_blob sta.ssid
+D (1123) nvs: nvs_get sta.authmode 1
+D (1123) nvs: nvs_get_str_or_blob sta.pswd
+D (1133) nvs: nvs_get_str_or_blob sta.pmk
+D (1133) nvs: nvs_get sta.chan 1
+D (1133) nvs: nvs_get auto.conn 1
+D (1143) nvs: nvs_get bssid.set 1
+D (1143) nvs: nvs_get_str_or_blob sta.bssid
+D (1143) nvs: nvs_get sta.lis_intval 2
+D (1153) nvs: nvs_get sta.phym 1
+D (1153) nvs: nvs_get sta.phybw 1
+D (1153) nvs: nvs_get_str_or_blob sta.apsw
+D (1163) nvs: nvs_get_str_or_blob sta.apinfo
+D (1163) nvs: nvs_get sta.scan_method 1
+D (1163) nvs: nvs_get sta.sort_method 1
+D (1173) nvs: nvs_get sta.minrssi 1
+D (1173) nvs: nvs_get sta.minauth 1
+D (1173) nvs: nvs_get sta.pmf_e 1
+D (1183) nvs: nvs_get sta.pmf_r 1
+D (1183) nvs: nvs_get sta.btm_e 1
+D (1183) nvs: nvs_get sta.rrm_e 1
+D (1193) nvs: nvs_get sta.mbo_e 1
+D (1193) nvs: nvs_get_str_or_blob ap.ssid
+D (1193) nvs: nvs_get_str_or_blob ap.passwd
+D (1203) nvs: nvs_get_str_or_blob ap.pmk
+D (1203) nvs: nvs_get ap.chan 1
+D (1203) nvs: nvs_get ap.authmode 1
+D (1213) nvs: nvs_get ap.hidden 1
+D (1213) nvs: nvs_get ap.max.conn 1
+D (1213) nvs: nvs_get bcn.interval 2
+D (1223) nvs: nvs_get ap.phym 1
+D (1223) nvs: nvs_get ap.phybw 1
+D (1223) nvs: nvs_get ap.sndchan 1
+D (1233) nvs: nvs_get ap.pmf_e 1
+D (1233) nvs: nvs_get ap.pmf_r 1
+D (1233) nvs: nvs_get ap.p_cipher 1
+D (1233) nvs: nvs_get lorate 1
+D (1243) nvs: nvs_get_str_or_blob country
+D (1243) nvs: nvs_get ap.ftm_r 1
+D (1243) nvs: nvs_get sta.ft 1
+D (1253) nvs: nvs_get sta.owe 1
+D (1253) nvs: nvs_get sta.trans_d 1
+D (1253) nvs: nvs_get sta.sae_h2e 1
+D (1263) nvs: nvs_get sta.sae_pk_mode 1
+D (1263) nvs: nvs_get sta.bss_retry 1
+D (1263) nvs: nvs_get_str_or_blob sta.owe_data
+D (1273) nvs: nvs_get sta.he_dcm 1
+D (1273) nvs: nvs_get sta.he_dcm_c_tx 1
+D (1273) nvs: nvs_get sta.he_dcm_c_rx 1
+D (1283) nvs: nvs_get sta.he_mcs9_d 1
+D (1283) nvs: nvs_get sta.he_su_b_d 1
+D (1283) nvs: nvs_get sta.he_su_b_f_d 1
+D (1293) nvs: nvs_get sta.he_mu_b_f_d 1
+D (1293) nvs: nvs_get sta.he_cqi_f_d 1
+D (1293) nvs: nvs_get_str_or_blob sta.sae_h2e_id
+D (1303) nvs: nvs_get ap.sae_h2e 1
+D (1303) nvs: nvs_get_str_or_blob ap.pmk_info
+D (1313) nvs: nvs_get nan.phym 1
+D (1313) nvs: nvs_get sta.pwr_reset 1
+D (1313) nvs: nvs_get band_mode 1
+D (1323) nvs: nvs_get sta.phym5g 1
+D (1323) nvs: nvs_get ap.phym5g 1
+D (1323) nvs: nvs_get sta.phybw5g 1
+D (1323) nvs: nvs_get ap.phybw5g 1
+D (1333) nvs: nvs_get ap.sndchan5g 1
+D (1333) nvs: nvs_get ap.chan5g 1
+D (1333) nvs: nvs_get ap.chanisset 1
+D (1343) nvs: nvs_get ap.chan5gisset 1
+D (1343) nvs: nvs_get sta.lowrate 1
+D (1343) nvs: nvs_get ap.lowrate 1
+D (1353) nvs: nvs_get sta.rssi_5g_adj 1
+D (1353) nvs: nvs_get ap.csa_count 1
+D (1353) nvs: nvs_get ap.dtim_period 1
+D (1363) nvs: nvs_get ap.trans_d 1
+D (1363) nvs: nvs_get ap.sae_ext 1
+D (1363) nvs: nvs_get ap.bssmaxidle 2
+D (1373) nvs: nvs_get ap.pro_keep_a 1
+D (1373) nvs: nvs_get ap.gtk_rekey 2
+D (1373) nvs: nvs_get sta.vht_su_b_d 1
+D (1383) nvs: nvs_get sta.vht_mu_b_d 1
+D (1383) nvs: nvs_get sta.vht_mcs8_e 1
+D (1383) nvs: nvs_set ap.sndchan 1 1
+[0;32mI (1393) wifi:wifi firmware version: 956d811[0m
+[0;32mI (1393) wifi:wifi certification version: v7.0[0m
+[0;32mI (1403) wifi:config NVS flash: enabled[0m
+[0;32mI (1403) wifi:config nano formatting: disabled[0m
+[0;32mI (1403) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1413) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1413) wifi:Init management short buffer num: 32[0m
+[0;32mI (1423) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1423) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1433) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1433) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1433) wifi:Init dynamic rx buffer num: 32[0m
+D (1443) wifi:Reset scan defaults in ms : min,max,passive,chan_dwell :(0,120,360,30)
+V (1453) wifi:hint=255, act_dur=<0,120>, pas_dur=360, nchans=14 history_num=0
+V (1453) esp_adapter: thread sem get: sem=0x3fced5a8
+[0;32mI (1463) wifi_init: rx ba win: 6[0m
+[0;32mI (1463) wifi_init: accept mbox: 6[0m
+[0;32mI (1463) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1473) wifi_init: udp mbox: 6[0m
+[0;32mI (1473) wifi_init: tcp mbox: 6[0m
+[0;32mI (1473) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1473) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1483) wifi_init: tcp mss: 1440[0m
+[0;32mI (1483) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1483) wifi_init: WiFi RX IRAM OP enabled[0m
+V (1493) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1493) nvs: nvs_get opmode 1
+V (1503) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1503) wifi:clear blacklist
+[0;33mW (1503) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+V (1513) esp_adapter: thread sem get: sem=0x3fced5a8
+[0;32mI (1523) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+D (1523) phy_init: loading PHY init data from application binary
+D (1533) nvs: nvs_open_from_partition phy 0
+D (1533) nvs: nvs_get cal_version 4
+V (1543) phy_init: phy_get_rf_cal_version: 701
+D (1543) nvs: nvs_get_str_or_blob cal_mac
+D (1543) efuse: BLK1 REG1 [8-15], len=8 bits
+D (1553) efuse: BLK1 REG1 [0-7], len=8 bits
+D (1553) efuse: BLK1 REG0 [24-31], len=8 bits
+D (1563) efuse: BLK1 REG0 [16-23], len=8 bits
+D (1563) efuse: BLK1 REG0 [8-15], len=8 bits
+D (1563) efuse: BLK1 REG0 [0-7], len=8 bits
+D (1573) nvs: nvs_get_str_or_blob cal_data
+D (1583) nvs: nvs_close 3
+D (1583) efuse: BLK1 REG1 [8-15], len=8 bits
+D (1583) efuse: BLK1 REG1 [0-7], len=8 bits
+D (1583) efuse: BLK1 REG0 [24-31], len=8 bits
+D (1593) efuse: BLK1 REG0 [16-23], len=8 bits
+D (1593) efuse: BLK1 REG0 [8-15], len=8 bits
+D (1593) efuse: BLK1 REG0 [0-7], len=8 bits
+D (1613) temperature_sensor: range changed, change to index 2
+V (1633) wifi:ht20 freq=2412, chan=1
+D (1633) wifi:filter: set rx policy=0
+[0;32mI (1633) wifi:mode : sta (d8:3b:da:47:1c:50)[0m
+[0;32mI (1633) wifi:enable tsf[0m
+D (1633) wifi:filter: set rx policy=1
+D (1633) wifi:connect status 0 -> 0
+D (1643) event: no handlers have been registered for event WIFI_EVENT:43 posted to loop 0x3fceb440
+D (1653) event: running post WIFI_EVENT:2 with handler 0x420158dc and context 0x3fcec59c on loop 0x3fceb440
+D (1653) wifi_init_default: wifi_start esp-netif:0x3fcec380 event-id2
+D (1663) wifi_init_default: WIFI mac address: d8 3b da 47 1c 50
+V (1673) esp_adapter: thread sem create: sem=0x3fcafffc
+V (1673) esp_adapter: thread sem get: sem=0x3fcafffc
+D (1683) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x420129e8
+D (1683) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+V (1683) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1693) esp_netif_handlers: esp_netif action has started with netif0x3fcec380 from event_id=2
+D (1703) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x4201348c
+D (1713) esp_netif_lwip: esp_netif_start_api 0x3fcec380
+D (1713) wifi:Start wifi connectD (1713) esp_netif_lwip: esp_netif_get_hostname esp_netif:0x3fcec380
+
+D (1723) wifi:connect status 0 -> 0D (1723) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+
+D (1733) wifi:connect chan=0
+D (1733) wifi:first chan=11
+D (1733) wifi:connect status 0 -> 1
+D (1743) wifi:filter: set rx policy=3
+D (1743) wifi:clear scan ap list
+D (1743) wifi:start scan: type=0x50f, priority=2, cb=0x4203cd60, arg=0x0, ss_state=0x1, time=1765333, index=0
+V (1753) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (1763) wifi:perform scan: ss_state=0x9, chan<11,0>, dur<0,120>
+V (1763) wifi:change: chan<11,0>, dur<0,120>
+V (1773) wifi:ht20 freq=2462, chan=11
+V (1773) wifi:enter start op, arg=0x3fca240c
+V (1783) wifi:scan operation: state=0x3, chan<11,0>, arg=0x3fca240c, status=0
+V (1783) wifi:scan specific ssid=Airtel_gaur_2614
+V (1793) wifi:start max timer
+D (1793) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+V (1803) wifi:updated connection retries to 0
+D (1803) wifi:profile match: ss_state=0x7
+V (1803) wifi:scan histroy table is not full yet, add
+V (1813) wifi:add ssid=Airtel_gaur_2614, chan=11 to scan history
+D (1813) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+D (1823) wifi:profile match: ss_state=0x7
+V (1823) wifi:update scan history ssid=Airtel_gaur_2614, channel=11
+D (1833) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+D (1843) wifi:profile match: ss_state=0x7
+V (1843) wifi:update scan history ssid=Airtel_gaur_2614, channel=11
+D (1853) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+D (1853) wifi:profile match: ss_state=0x7
+V (1863) wifi:update scan history ssid=Airtel_gaur_2614, channel=11
+D (1863) wifi:scan end: arg=0x3fca240c, status=0, ss_state=0x7
+D (1873) wifi:find first mathched ssid, scan done
+V (1873) wifi:back home chan=<1,0>, current chan=<11,0>
+V (1883) wifi:ht20 freq=2412, chan=1
+D (1883) wifi:filter: set rx policy=4
+D (1883) wifi:first chan=1
+V (1893) wifi:scan_done: arg=0x0, status=0, cur_time=1908448, scan_id=128, scan state=0
+V (1893) wifi:call scan_done cb, arg=0x0
+D (1903) wifi:handoff_cb: status=0
+V (1903) wifi:best bss has set.
+D (1903) wifi:ap found, mac=ec:a2:a0:6d:0a:69
+V (1913) wifi:bssid=ec:a2:a0:6d:0a:69, LR=0
+D (1913) wifi:going for connection with bssid=ec:a2:a0:6d:0a:69
+D (1923) wifi:new_bss=0x3fca1198, cur_bss=0x0, new_chan=<11,0>, cur_chan=1
+D (1923) wifi:filter: set rx policy=5
+[0;32mI (1933) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+V (1943) wifi:ht20 freq=2462, chan=11
+D (1943) wifi:connect_op: status=0, auth=5, cipher=3 
+D (1943) wifi:auth mode is not none
+D (1953) wifi:connect_bss: auth=1, reconnect=0
+[0;32mI (1953) wifi:state: init -> auth (0xb0)[0m
+D (1953) nvs: nvs_get sta.pwr_reset 1
+D (1963) wifi:start 1000ms AUTH timer
+D (1963) wifi:clear scan ap list
+D (1963) event: no handlers have been registered for event WIFI_EVENT:43 posted to loop 0x3fceb440
+D (1973) wifi:recv auth: seq=2, status=0, algo=0
+[0;32mI (1983) wifi:state: auth -> assoc (0x0)[0m
+D (1983) nvs: nvs_get sta.pwr_reset 1
+D (1983) wifi:restart connect 1000ms timer for assoc
+[0;32mI (1993) MIC_TRIGGERED: Wi-Fi connecting to Airtel_gaur_2614...[0m
+D (1993) wifi:recv assoc: type=0x10
+D (2003) wifi:filter: set rx policy=6
+[0;32mI (2003) wifi:state: assoc -> run (0x10)[0m
+D (2003) nvs: nvs_get sta.pwr_reset 1
+D (2013) wifi:start 10s connect timer for 4 way handshake
+D (2013) i2s_common: rx channel is registered on I2S0 successfully
+[0;33mW (2023) i2s_common: dma frame num is out of dma buffer size, limited to 2046[0m
+D (2033) i2s_common: DMA malloc info: dma_desc_num = 4, dma_desc_buf_size = dma_frame_num * slot_num * data_bit_width = 4092
+D (2043) i2s_pdm: Clock division info: [sclk] 160000000 Hz [mdiv] 19 17/32 [mclk] 8192000 Hz [bdiv] 8 [bclk] 1024000 Hz
+D (2053) gdma: new group (0) at 0x3fcb446c
+D (2053) gdma: new pair (0,0) at 0x3fcb44f8
+D (2063) gdma: new rx channel (0,0) at 0x3fcb4430
+V (2063) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (2073) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x80E
+D (2073) intr_alloc: Connected src 66 to int 9 (cpu 0)
+D (2083) gdma: install interrupt service for rx channel (0,0)
+D (2083) i2s_pdm: The rx channel on I2S0 has been initialized to PDM RX mode successfully
+D (2093) i2s_common: i2s rx channel enabled
+V (2093) wifi:wpa_psk start
+V (2103) wifi:wpa_psk handle succeed
+V (2103) wifi:sta recv dup seq=0 tid=0, discard
+[0;32mI (2113) MIC_TRIGGERED: I2S microphone initialized[0m
+D (2113) httpd: httpd_thread: web server started
+V (2113) wifi:wpa_psk start
+V (2123) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (2123) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE
+D (2133) intr_alloc: Connected src 77 to int 12 (cpu 0)
+D (2123) httpd: httpd_server: doing select maxfd+1 = 56
+D (2143) gdma: new tx channel (0,0) at 0x3fcb6aac
+D (2153) gdma: new pair (0,1) at 0x3fcb6c50
+D (2153) gdma: new rx channel (0,1) at 0x3fcb6c14
+V (2163) wifi:wpa_psk handle succeed
+D (2143) event: no handlers have been registered for event ESP_HTTP_SERVER_EVENT:1 posted to loop 0x3fceb440
+[0;32mI (2163) wifi:connected with Airtel_gaur_2614, aid = 1, channel 11, BW20, bssid = ec:a2:a0:6d:0a:69[0m
+[0;32mI (2183) wifi:security: WPA2-PSK, phy: bgn, rssi: -65[0m
+D (2183) wifi:remove all except ec:a2:a0:6d:0a:69 from rc list
+D (2193) wifi:clear blacklist
+D (2193) nvs: nvs_set sta.chan 1 11
+D (2193) nvs: nvs_set_blob sta.apinfo 700
+D (2203) wifi:filter: set rx policy=7
+[0;32mI (2203) wifi:pm start, type: 1[0m
+
+[0;32mI (2203) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2213) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+D (2223) wifi:Send sta connected event
+D (2223) wifi:connect status 1 -> 5
+D (2223) wifi:obss scan is disabled
+D (2233) wifi:start obss scan: obss scan is stopped
+D (2233) wifi:bcnd: 0 -> 2352
+[0;32mI (2233) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+D (2243) event: running post WIFI_EVENT:4 with handler 0x4201590c and context 0x3fcec5fc on loop 0x3fceb440
+V (2253) esp_adapter: thread sem get: sem=0x3fcafffc
+D (2253) esp_netif_handlers: esp_netif action connected with netif0x3fcec380 from event_id=4
+D (2263) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x420136c0
+D (2143) httpd_uri: httpd_register_uri_handler: [0] installed /trigger
+D (2273) esp_netif_lwip: esp_netif_up_api esp_netif:0x3fcec380
+D (2283) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+D (2293) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x42012eac
+D (2293) esp_netif_lwip: esp_netif_dhcpc_start_api esp_netif:0x3fcec380
+[0;32mI (2293) main_task: Returned from app_main()[0m
+D (2303) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcec380
+D (2313) esp_netif_lwip: if0x3fcec380 start ip lost tmr: interval=120
+D (2323) esp_netif_lwip: starting dhcp client
+D (2323) wifi:eb is dhcp or dns sport = 68, dport = 67
+D (2323) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+[0;32mI (2413) wifi:<ba-add>idx:0 (ifx:0, ec:a2:a0:6d:0a:69), tid:0, ssn:2, winSize:64[0m
+D (2503) wifi:eb is dhcp or dns sport = 68, dport = 67
+D (3643) esp_netif_lwip: esp_netif_internal_dhcpc_cb lwip-netif:0x3fcec410
+D (3643) esp_netif_lwip: check: local, if=0x3fcec380 fn=0x42013b04
+D (3643) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcec380
+V (3643) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcec380
+D (3653) esp_netif_lwip: if0x3fcec380 ip changed=1
+D (3653) event: running post IP_EVENT:0 with handler 0x42015728 and context 0x3fcec6d0 on loop 0x3fceb440
+D (3663) wifi_init_default: Got IP wifi default handler entered
+D (3673) esp_netif_handlers: esp_netif action got_ip with netif0x3fcec380 from event_id=0
+[0;32mI (3683) esp_netif_handlers: sta ip: 192.168.1.33, mask: 255.255.255.0, gw: 192.168.1.1[0m
+D (15103) httpd: httpd_server: processing listen socket 54
+D (15103) httpd: httpd_accept_conn: newfd = 57
+D (15103) httpd_sess: httpd_sess_new: fd = 57
+D (15103) httpd_sess: httpd_sess_new: active sockets: 1
+D (15113) httpd: httpd_accept_conn: complete
+D (15113) event: no handlers have been registered for event ESP_HTTP_SERVER_EVENT:2 posted to loop 0x3fceb440
+D (15113) httpd: httpd_server: doing select maxfd+1 = 58
+D (15133) httpd: httpd_process_session: processing socket 57
+D (15133) httpd_sess: httpd_sess_process: httpd_req_new
+D (15143) httpd_parse: scratch buf qsize = 128
+D (15143) httpd_txrx: httpd_recv_with_opt: requested length = 128
+D (15153) httpd_txrx: httpd_recv_with_opt: received length = 128
+D (15153) httpd_parse: read_block: received HTTP request block size = 128
+D (15163) httpd_parse: cb_url: message begin
+D (15163) httpd_parse: cb_url: processing url = /trigger
+D (15173) httpd_parse: verify_url: received URI = /trigger
+D (15173) httpd_parse: cb_header_field: headers begin
+D (15183) httpd_txrx: httpd_unrecv: length = 105
+D (15183) httpd_parse: pause_parsing: paused
+D (15183) httpd_parse: cb_header_field: processing field = Host
+D (15193) httpd_parse: scratch buf qsize = 128
+D (15193) httpd_txrx: httpd_recv_with_opt: requested length = 128
+D (15203) httpd_txrx: httpd_recv_with_opt: pending length = 105
+D (15213) httpd_parse: read_block: received HTTP request block size = 105
+D (15213) httpd_parse: continue_parsing: skip pre-parsed data of size = 5
+D (15223) httpd_parse: continue_parsing: un-paused
+D (15223) httpd_parse: cb_header_value: processing value = 192.168.1.33
+D (15233) httpd_parse: cb_header_field: processing field = Connection
+D (15243) httpd_parse: cb_header_value: processing value = keep-alive
+D (15243) httpd_parse: cb_header_field: processing field = Upgrade-Insecure-Requests
+D (15253) httpd_parse: cb_header_value: processing value = 1
+D (15263) httpd_parse: cb_header_field: processing field = User-Agent
+D (15263) httpd_parse: cb_header_value: processing value = Mozilla/5.0 (X11; L
+D (15273) httpd_parse: parse_block: parsed block size = 105
+D (15273) httpd_parse: scratch buf qsize = 233
+D (15283) httpd_txrx: httpd_recv_with_opt: requested length = 128
+D (15283) httpd_txrx: httpd_recv_with_opt: received length = 128
+D (15293) httpd_parse: read_block: received HTTP request block size = 128
+D (15303) httpd_parse: cb_header_value: processing value = inux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+D (15313) httpd_parse: cb_header_field: processing field = Accept
+D (15313) httpd_parse: cb_header_value: processing value = text/html,application/xhtml+xml,appl
+D (15323) httpd_parse: parse_block: parsed block size = 233
+D (15333) httpd_parse: scratch buf qsize = 361
+D (15333) httpd_txrx: httpd_recv_with_opt: requested length = 128
+D (15343) httpd_txrx: httpd_recv_with_opt: received length = 128
+D (15343) httpd_parse: read_block: received HTTP request block size = 128
+D (15353) httpd_parse: cb_header_value: processing value = ication/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+D (15363) httpd_parse: cb_header_field: processing field = Sec-GPC
+D (15373) httpd_parse: cb_header_value: processing value = 1
+D (15373) httpd_parse: cb_header_field: processing field = Accept-Language
+D (15383) httpd_parse: cb_header_value: processing value = en-US,en;q=0.6
+D (15383) httpd_parse: cb_header_field: processing field = Accept-Encoding
+D (15393) httpd_parse: cb_header_value: processing value = gzip
+D (15403) httpd_parse: parse_block: parsed block size = 361
+D (15403) httpd_parse: scratch buf qsize = 489
+D (15413) httpd_txrx: httpd_recv_with_opt: requested length = 128
+D (15413) httpd_txrx: httpd_recv_with_opt: received length = 13
+D (15423) httpd_parse: read_block: received HTTP request block size = 13
+D (15423) httpd_parse: cb_header_value: processing value = , deflate
+D (15433) httpd_parse: cb_headers_complete: bytes read     = 400
+D (15443) httpd_parse: cb_headers_complete: content length = 0
+D (15443) event: no handlers have been registered for event ESP_HTTP_SERVER_EVENT:3 posted to loop 0x3fceb440
+D (15453) httpd_parse: pause_parsing: paused
+D (15463) httpd_parse: cb_no_body: message complete
+D (15463) httpd_parse: httpd_parse_req: parsing complete
+D (15463) httpd_uri: httpd_uri: request for /trigger with type 1
+D (15473) httpd_uri: httpd_find_uri_handler: [0] = /trigger
+D (15483) httpd_txrx: httpd send buffer size = 62
+D (15483) httpd_txrx: httpd_send_all: sent = 62
+D (15493) httpd_txrx: httpd_send_all: sent = 2
+D (15493) event: no handlers have been registered for event ESP_HTTP_SERVER_EVENT:4 posted to loop 0x3fceb440
+D (15493) httpd_txrx: httpd_send_all: sent = 16
+[0;32mI (15503) MIC_TRIGGERED: 📥 Triggered from server[0m
+D (15503) event: no handlers have been registered for event ESP_HTTP_SERVER_EVENT:6 posted to loop 0x3fceb440
+D (15513) httpd_sess: httpd_sess_process: httpd_req_delete
+D (15523) httpd_sess: httpd_sess_process: success
+D (15533) httpd: httpd_server: doing select maxfd+1 = 58
+D (15533) httpd: httpd_server: processing listen socket 54
+D (15543) httpd: httpd_accept_conn: newfd = 58
+D (15543) httpd_sess: httpd_sess_new: fd = 58
+D (15553) httpd_sess: httpd_sess_new: active sockets: 2
+D (15553) httpd: httpd_accept_conn: complete
+D (15553) event: no handlers have been registered for event ESP_HTTP_SERVER_EVENT:2 posted to loop 0x3fceb440
+D (15553) httpd: httpd_server: doing select maxfd+1 = 59
+[0;32mI (15803) MIC_TRIGGERED: 🎙️ Recording started[0m
+D (20683) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (20683) esp-tls: host:192.168.1.32: strlen 12
+D (20683) esp-tls: [sock=59] Resolved IPv4 address: 192.168.1.32
+D (20683) esp-tls: [sock=59] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (20753) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (20753) HTTP_CLIENT: Write header[4]: POST /upload HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 160000
+
+
+D (20763) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (26903) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (26903) MIC_TRIGGERED: ✅ Audio sent to server[0m
+D (26903) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440

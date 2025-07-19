@@ -1,0 +1,1166 @@
+Command: /home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/devesh/Desktop/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/microphone_test.elf /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/build/bootloader/bootloader.elf -m '/home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/devesh/Desktop/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;32mI (116) esp_image: segment 1: paddr=00037490 vaddr=3fc9ae00 size_layout: Examining memory region 0x3fcc0000 - 0x3fcd0000[0m
+D (517) memory_layout: Available memoryESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004883b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1598
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f44
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v6.0-dev-1002-gbfe5caf58f 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Jul 17 2025 20:16:26[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=27468h (160872) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=00037490 vaddr=3fc9ae00 size=04e28h ( 20008) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0003c2c0 vaddr=40374000 size=03d58h ( 15704) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9db60h (645984) map[0m
+[0;32mI (241) esp_image: segment 4: paddr=000ddb88 vaddr=40377d58 size=13040h ( 77888) load[0m
+[0;32mI (259) esp_image: segment 5: paddr=000f0bd0 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (269) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (269) boot: Disabling RNG early entropy source...[0m
+V (279) mmap: after coalescing, 1 regions are left
+[0;32mI (279) cpu_start: Multicore app[0m
+D (279) cpu_start: Pro cpu up
+D (280) cpu_start: Starting app cpu, entry point is 0x4037542c
+D (0) cpu_start: App cpu up
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_EDR (R:29 c2o)r ec lk1:  aRcTC_cSLeOWs_CsLK  cealrriborr aitionn tvarlu e:c l38r 6&0 6e5n9a
+mask is: 0x1f
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 0 access error intr clr & ena mask is: 0x1f
+D (310) cpu_start: calling init function: 0x42001f28 on core: 0
+D (314) cpu_start: calling init function: 0x420023c8 on core: 0
+[0;32mI (319) cpu_start: Pro cpu start user code[0m
+[0;32mI (323) cpu_start: cpu freq: 160000000 Hz[0m
+D (327) cpu_start: calling init function: 0x42001e58 on core: 0
+[0;32mI (333) app_init: Application information:[0m
+[0;32mI (336) app_init: Project name:     microphone_test[0m
+[0;32mI (341) app_init: App version:      4567af0-dirty[0m
+[0;32mI (346) app_init: Compile time:     Jul 18 2025 20:00:04[0m
+[0;32mI (351) app_init: ELF file SHA256:  2b70aaacc...[0m
+[0;32mI (355) app_init: ESP-IDF:          v6.0-dev-1002-gbfe5caf58f[0m
+D (360) cpu_start: calling init function: 0x42001f3c on core: 0
+[0;32mI (366) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (370) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (374) efuse_init: Chip rev:         v0.2[0m
+D (378) cpu_start: calling init function: 0x42004020 on core: 0
+V (383) memory_layout: reserved range is 0x3c0c73b0 - 0x3c0c73d8
+D (389) memory_layout: Checking 6 reserved memory ranges:
+D (394) memory_layout: Reserved memory range 0x3fc84000 - 0x3fc9ae00
+D (400) memory_layout: Reserved memory range 0x3fc9ae00 - 0x3fca3f88
+D (406) memory_layout: Reserved memory range 0x3fceee34 - 0x3fcf0000
+D (412) memory_layout: Reserved memory range 0x40374000 - 0x4038ae00
+D (418) memory_layout: Reserved memory range 0x600fe000 - 0x600fe020
+D (424) memory_layout: Reserved memory range 0x600fffe8 - 0x60100000
+D (431) memory_layout: Building list of available memory regions:
+V (436) memory_layout: Examining memory region 0x3fc88000 - 0x3fc90000
+V (443) memory_layout: Region 0x3fc88000 - 0x3fc90000 inside of reserved 0x3fc84000 - 0x3fc9ae00
+V (451) memory_layout: Examining memory region 0x3fc90000 - 0x3fca0000
+V (457) memory_layout: Start of region 0x3fc90000 - 0x3fca0000 overlaps reserved 0x3fc84000 - 0x3fc9ae00
+V (467) memory_layout: Region 0x3fc9ae00 - 0x3fca0000 inside of reserved 0x3fc9ae00 - 0x3fca3f88
+V (475) memory_layout: Examining memory region 0x3fca0000 - 0x3fcb0000
+V (481) memory_layout: Start of region 0x3fca0000 - 0x3fcb0000 overlaps reserved 0x3fc9ae00 - 0x3fca3f88
+D (491) memory_layout: Available memory region 0x3fca3f88 - 0x3fcb0000
+V (497) memory_layout: Examining memory region 0x3fcb0000 - 0x3fcc0000
+D (503) memory_layout: Available memory region 0x3fcb0000 - 0x3fcc0000
+V (509) memory_layout: Examining memory region 0x3fcc0000 - 0x3fcd0000
+D (516) memory_layout: Available memory region 0x3fcc0000 - 0x3fcd0000
+V (522) memory_layout: Examining memory region 0x3fcd0000 - 0x3fce0000
+D (528) memory_layout: Available memory region 0x3fcd0000 - 0x3fce0000
+V (534) memory_layout: Examining memory region 0x3fce0000 - 0x3fce9710
+D (541) memory_layout: Available memory region 0x3fce0000 - 0x3fce9710
+V (547) memory_layout: Examining memory region 0x3fce9710 - 0x3fcf0000
+V (553) memory_layout: End of region 0x3fce9710 - 0x3fcf0000 overlaps reserved 0x3fceee34 - 0x3fcf0000
+D (562) memory_layout: Available memory region 0x3fce9710 - 0x3fceee34
+V (568) memory_layout: Examining memory region 0x3fcf0000 - 0x3fcf8000
+D (575) memory_layout: Available memory region 0x3fcf0000 - 0x3fcf8000
+V (581) memory_layout: Examining memory region 0x600fe000 - 0x60100000
+V (587) memory_layout: Start of region 0x600fe000 - 0x60100000 overlaps reserved 0x600fe000 - 0x600fe020
+V (596) memory_layout: End of region 0x600fe020 - 0x60100000 overlaps reserved 0x600fffe8 - 0x60100000
+D (605) memory_layout: Available memory region 0x600fe020 - 0x600fffe8
+[0;32mI (612) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (618) heap_init: New heap initialised at 0x3fca3f88
+[0;32mI (623) heap_init: At 3FCA3F88 len 00045788 (277 KiB): RAM[0m
+[0;32mI (628) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+D (633) heap_init: New heap initialised at 0x3fcf0000
+[0;32mI (638) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+D (643) heap_init: New heap initialised at 0x600fe020
+[0;32mI (648) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+D (653) cpu_start: calling init function: 0x42007744 on core: 0
+D (659) cpu_start: calling init function: 0x42007088 on core: 0
+D (664) cpu_start: calling init function: 0x42002414 on core: 0
+V (670) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (676) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E
+D (684) intr_alloc: Connected src 39 to int 1 (cpu 0)
+D (688) cpu_start: calling init function: 0x42002424 on core: 0
+D (694) cpu_start: calling init function: 0x42008758 on core: 0
+D (700) cpu_start: calling init function: 0x42009834 on core: 0
+D (705) cpu_start: calling init function: 0x4200b31c on core: 0
+D (711) cpu_start: calling init function: 0x42009ab0 on core: 0
+D (717) cpu_start: calling init function: 0x42007094 on core: 0
+D (723) cpu_start: calling init function: 0x42002430 on core: 0
+V (728) memspi: raw_chip_id: 1740C8
+
+V (731) memspi: chip_id: C84017
+
+V (734) memspi: raw_chip_id: 1740C8
+
+V (738) memspi: chip_id: C84017
+
+D (741) spi_flash: trying chip: issi
+D (744) spi_flash: trying chip: gd
+[0;32mI (747) spi_flash: detected chip: gd[0m
+[0;32mI (751) spi_flash: flash io: dio[0m
+[0;33mW (753) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (766) cpu_start: calling init function: 0x42001fd8 on core: 0
+D (771) cpu_start: calling init function: 0x4208294c
+D (776) cpu_start: calling init function: 0x4207ecb4
+D (781) cpu_start: calling init function: 0x42014448
+D (786) cpu_start: calling init function: 0x4037b798
+D (790) cpu_start: calling init function: 0x420036d0
+D (795) cpu_start: calling init function: 0x4204eabc on core: 0
+V (800) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (806) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xC02
+D (814) intr_alloc: Connected src 59 to int 2 (cpu 0)
+D (819) cpu_start: calling init function: 0x420930fc on core: 0
+D (825) cpu_start: calling init function: 0x420051b4 on core: 0
+[0;32mI (830) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (837) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+D (843) cpu_start: calling init function: 0x42002464 on core: 0
+D (849) cpu_start: calling init function: 0x4200914c on core: 0
+D (854) cpu_start: calling init function: 0x42002470 on core: 0
+V (860) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (866) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E
+D (874) intr_alloc: Connected src 79 to int 3 (cpu 0)
+D (878) app_start: Starting scheduler on CPU0
+V (883) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (883) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x402
+D (883) intr_alloc: Connected src 57 to int 5 (cpu 0)
+V (883) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args
+V (893) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x40E
+D (893) intr_alloc: Connected src 80 to int 0 (cpu 1)
+D (903) app_start: Starting scheduler on CPU1
+V (903) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args
+V (913) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x402
+D (923) intr_alloc: Connected src 58 to int 1 (cpu 1)
+[0;32mI (883) main_task: Started on CPU0[0m
+D (933) heap_init: New heap initialised at 0x3fce9710
+V (933) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (943) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE
+D (943) intr_alloc: Connected src 52 to int 8 (cpu 0)
+[0;32mI (953) main_task: Calling app_main()[0m
+V (953) partition: Loading the partition table
+V (963) mmap: actual_mapped_len is 0x10000
+V (963) calculated md5: 0x3fca7918   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|
+V (973) stored md5: 0x3c0d8070   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|
+V (983) partition: Partition table MD5 verified
+D (1003) esp_netif_lwip: LwIP stack has been initialized
+D (1003) esp_netif_lwip: esp-netif has been successfully initialized
+D (1003) event: running task for loop 0x3fceb440
+D (1003) event: created task for loop 0x3fceb440
+D (1013) event: created event loop 0x3fceb440
+D (1013) esp_netif_lwip: check: remote, if=0x3fca78f0 fn=0x42012060
+V (1023) esp_netif_objects: esp_netif_add_to_list_unsafe 0x3fcec380
+D (1023) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 1)
+D (1033) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+[0;32mI (1043) pp: pp rom version: e7ae62f[0m
+[0;32mI (1043) net80211: net80211 rom version: e7ae62f[0m
+D (1053) nvs: nvs_open_from_partition misc 1
+[0;32mI (1063) wifi:wifi driver task: 3fced444, prio:23, stack:6656, core=0[0m
+V (1063) esp_adapter: thread sem create: sem=0x3fced5a8
+V (1063) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1073) efuse: BLK1 REG1 [8-15], len=8 bits
+D (1073) efuse: BLK1 REG1 [0-7], len=8 bits
+D (1073) efuse: BLK1 REG0 [24-31], len=8 bits
+D (1083) efuse: BLK1 REG0 [16-23], len=8 bits
+D (1083) efuse: BLK1 REG0 [8-15], len=8 bits
+D (1093) efuse: BLK1 REG0 [0-7], len=8 bits
+D (1093) nvs: nvs_open_from_partition nvs.net80211 1
+D (1103) nvs: nvs_get opmode 1
+D (1103) nvs: nvs_get_str_or_blob sta.ssid
+D (1103) nvs: nvs_get sta.authmode 1
+D (1113) nvs: nvs_get_str_or_blob sta.pswd
+D (1113) nvs: nvs_get_str_or_blob sta.pmk
+D (1113) nvs: nvs_get sta.chan 1
+D (1123) nvs: nvs_get auto.conn 1
+D (1123) nvs: nvs_get bssid.set 1
+D (1123) nvs: nvs_get_str_or_blob sta.bssid
+D (1133) nvs: nvs_get sta.lis_intval 2
+D (1133) nvs: nvs_get sta.phym 1
+D (1133) nvs: nvs_get sta.phybw 1
+D (1133) nvs: nvs_get_str_or_blob sta.apsw
+D (1143) nvs: nvs_get_str_or_blob sta.apinfo
+D (1143) nvs: nvs_get sta.scan_method 1
+D (1153) nvs: nvs_get sta.sort_method 1
+D (1153) nvs: nvs_get sta.minrssi 1
+D (1153) nvs: nvs_get sta.minauth 1
+D (1163) nvs: nvs_get sta.pmf_e 1
+D (1163) nvs: nvs_get sta.pmf_r 1
+D (1163) nvs: nvs_get sta.btm_e 1
+D (1173) nvs: nvs_get sta.rrm_e 1
+D (1173) nvs: nvs_get sta.mbo_e 1
+D (1173) nvs: nvs_get_str_or_blob ap.ssid
+D (1183) nvs: nvs_get_str_or_blob ap.passwd
+D (1183) nvs: nvs_get_str_or_blob ap.pmk
+D (1183) nvs: nvs_get ap.chan 1
+D (1193) nvs: nvs_get ap.authmode 1
+D (1193) nvs: nvs_get ap.hidden 1
+D (1193) nvs: nvs_get ap.max.conn 1
+D (1203) nvs: nvs_get bcn.interval 2
+D (1203) nvs: nvs_get ap.phym 1
+D (1203) nvs: nvs_get ap.phybw 1
+D (1203) nvs: nvs_get ap.sndchan 1
+D (1213) nvs: nvs_get ap.pmf_e 1
+D (1213) nvs: nvs_get ap.pmf_r 1
+D (1213) nvs: nvs_get ap.p_cipher 1
+D (1223) nvs: nvs_get lorate 1
+D (1223) nvs: nvs_get_str_or_blob country
+D (1223) nvs: nvs_get ap.ftm_r 1
+D (1233) nvs: nvs_get sta.ft 1
+D (1233) nvs: nvs_get sta.owe 1
+D (1233) nvs: nvs_get sta.trans_d 1
+D (1233) nvs: nvs_get sta.sae_h2e 1
+D (1243) nvs: nvs_get sta.sae_pk_mode 1
+D (1243) nvs: nvs_get sta.bss_retry 1
+D (1253) nvs: nvs_get_str_or_blob sta.owe_data
+D (1253) nvs: nvs_get sta.he_dcm 1
+D (1253) nvs: nvs_get sta.he_dcm_c_tx 1
+D (1263) nvs: nvs_get sta.he_dcm_c_rx 1
+D (1263) nvs: nvs_get sta.he_mcs9_d 1
+D (1263) nvs: nvs_get sta.he_su_b_d 1
+D (1273) nvs: nvs_get sta.he_su_b_f_d 1
+D (1273) nvs: nvs_get sta.he_mu_b_f_d 1
+D (1273) nvs: nvs_get sta.he_cqi_f_d 1
+D (1283) nvs: nvs_get_str_or_blob sta.sae_h2e_id
+D (1283) nvs: nvs_get ap.sae_h2e 1
+D (1283) nvs: nvs_get_str_or_blob ap.pmk_info
+D (1293) nvs: nvs_get nan.phym 1
+D (1293) nvs: nvs_get sta.pwr_reset 1
+D (1293) nvs: nvs_get band_mode 1
+D (1303) nvs: nvs_get sta.phym5g 1
+D (1303) nvs: nvs_get ap.phym5g 1
+D (1303) nvs: nvs_get sta.phybw5g 1
+D (1313) nvs: nvs_get ap.phybw5g 1
+D (1313) nvs: nvs_get ap.sndchan5g 1
+D (1313) nvs: nvs_get ap.chan5g 1
+D (1323) nvs: nvs_get ap.chanisset 1
+D (1323) nvs: nvs_get ap.chan5gisset 1
+D (1323) nvs: nvs_get sta.lowrate 1
+D (1333) nvs: nvs_get ap.lowrate 1
+D (1333) nvs: nvs_get sta.rssi_5g_adj 1
+D (1333) nvs: nvs_get ap.csa_count 1
+D (1343) nvs: nvs_get ap.dtim_period 1
+D (1343) nvs: nvs_get ap.trans_d 1
+D (1343) nvs: nvs_get ap.sae_ext 1
+D (1353) nvs: nvs_get ap.bssmaxidle 2
+D (1353) nvs: nvs_get ap.pro_keep_a 1
+D (1353) nvs: nvs_get ap.gtk_rekey 2
+D (1363) nvs: nvs_get sta.vht_su_b_d 1
+D (1363) nvs: nvs_get sta.vht_mu_b_d 1
+D (1363) nvs: nvs_get sta.vht_mcs8_e 1
+D (1373) nvs: nvs_set ap.sndchan 1 1
+[0;32mI (1373) wifi:wifi firmware version: 956d811[0m
+[0;32mI (1373) wifi:wifi certification version: v7.0[0m
+[0;32mI (1383) wifi:config NVS flash: enabled[0m
+[0;32mI (1383) wifi:config nano formatting: disabled[0m
+[0;32mI (1393) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1393) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1393) wifi:Init management short buffer num: 32[0m
+[0;32mI (1403) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1403) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1413) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1413) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1423) wifi:Init dynamic rx buffer num: 32[0m
+D (1423) wifi:Reset scan defaults in ms : min,max,passive,chan_dwell :(0,120,360,30)
+V (1433) wifi:hint=255, act_dur=<0,120>, pas_dur=360, nchans=14 history_num=0
+V (1433) esp_adapter: thread sem get: sem=0x3fced5a8
+[0;32mI (1443) wifi_init: rx ba win: 6[0m
+[0;32mI (1443) wifi_init: accept mbox: 6[0m
+[0;32mI (1443) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1453) wifi_init: udp mbox: 6[0m
+[0;32mI (1453) wifi_init: tcp mbox: 6[0m
+[0;32mI (1453) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1463) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1463) wifi_init: tcp mss: 1440[0m
+[0;32mI (1463) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1473) wifi_init: WiFi RX IRAM OP enabled[0m
+V (1473) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1483) nvs: nvs_get opmode 1
+V (1483) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1483) wifi:clear blacklist
+[0;33mW (1493) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+V (1493) esp_adapter: thread sem get: sem=0x3fced5a8
+[0;32mI (1503) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+D (1503) phy_init: loading PHY init data from application binary
+D (1513) nvs: nvs_open_from_partition phy 0
+D (1513) nvs: nvs_get cal_version 4
+V (1523) phy_init: phy_get_rf_cal_version: 701
+D (1523) nvs: nvs_get_str_or_blob cal_mac
+D (1533) efuse: BLK1 REG1 [8-15], len=8 bits
+D (1533) efuse: BLK1 REG1 [0-7], len=8 bits
+D (1533) efuse: BLK1 REG0 [24-31], len=8 bits
+D (1543) efuse: BLK1 REG0 [16-23], len=8 bits
+D (1543) efuse: BLK1 REG0 [8-15], len=8 bits
+D (1553) efuse: BLK1 REG0 [0-7], len=8 bits
+D (1553) nvs: nvs_get_str_or_blob cal_data
+D (1563) nvs: nvs_close 3
+D (1563) efuse: BLK1 REG1 [8-15], len=8 bits
+D (1563) efuse: BLK1 REG1 [0-7], len=8 bits
+D (1563) efuse: BLK1 REG0 [24-31], len=8 bits
+D (1573) efuse: BLK1 REG0 [16-23], len=8 bits
+D (1573) efuse: BLK1 REG0 [8-15], len=8 bits
+D (1583) efuse: BLK1 REG0 [0-7], len=8 bits
+D (1603) temperature_sensor: range changed, change to index 2
+V (1613) wifi:ht20 freq=2412, chan=1
+D (1613) wifi:filter: set rx policy=0
+[0;32mI (1613) wifi:mode : sta (d8:3b:da:47:1c:50)[0m
+[0;32mI (1613) wifi:enable tsf[0m
+D (1613) wifi:filter: set rx policy=1
+D (1613) wifi:connect status 0 -> 0
+D (1623) event: no handlers have been registered for event WIFI_EVENT:43 posted to loop 0x3fceb440
+D (1633) event: running post WIFI_EVENT:2 with handler 0x420146dc and context 0x3fcec59c on loop 0x3fceb440
+D (1643) wifi_init_default: wifi_start esp-netif:0x3fcec380 event-id2
+D (1643) wifi_init_default: WIFI mac address: d8 3b da 47 1c 50
+V (1653) esp_adapter: thread sem create: sem=0x3fcafdd4
+V (1653) esp_adapter: thread sem get: sem=0x3fcafdd4
+D (1663) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x420117e8
+D (1663) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+V (1663) esp_adapter: thread sem get: sem=0x3fced5a8
+D (1673) esp_netif_handlers: esp_netif action has started with netif0x3fcec380 from event_id=2
+D (1683) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x4201228c
+D (1693) esp_netif_lwip: esp_netif_start_api 0x3fcec380
+D (1693) wifi:Start wifi connectD (1693) esp_netif_lwip: esp_netif_get_hostname esp_netif:0x3fcec380
+
+D (1703) wifi:D (1703) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+connect status 0 -> 0
+D (1713) wifi:connect chan=0
+D (1713) wifi:first chan=11
+D (1713) wifi:connect status 0 -> 1
+D (1723) wifi:filter: set rx policy=3
+D (1723) wifi:clear scan ap list
+D (1723) wifi:start scan: type=0x50f, priority=2, cb=0x4203922c, arg=0x0, ss_state=0x1, time=1745948, index=0
+V (1733) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (1743) wifi:perform scan: ss_state=0x9, chan<11,0>, dur<0,120>
+V (1743) wifi:change: chan<11,0>, dur<0,120>
+V (1753) wifi:ht20 freq=2462, chan=11
+V (1753) wifi:enter start op, arg=0x3fca21e4
+V (1763) wifi:scan operation: state=0x3, chan<11,0>, arg=0x3fca21e4, status=0
+V (1763) wifi:scan specific ssid=Airtel_gaur_2614
+V (1773) wifi:start max timer
+[0;32mI (1773) MIC_STREAM: Wi-Fi connected to Airtel_gaur_2614[0m
+D (1773) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+V (1783) wifi:updated connection retries to 0
+D (1793) wifi:profile match: ss_state=0x7
+V (1793) wifi:scan histroy table is not full yet, add
+V (1793) wifi:add ssid=Airtel_gaur_2614, chan=11 to scan history
+D (1803) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+D (1813) wifi:profile match: ss_state=0x7
+V (1813) wifi:update scan history ssid=Airtel_gaur_2614, channel=11
+D (1823) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+D (1823) wifi:profile match: ss_state=0x7
+V (1833) wifi:update scan history ssid=Airtel_gaur_2614, channel=11
+D (1833) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=ec:a2:a0:6d:0a:69
+D (1843) wifi:profile match: ss_state=0x7
+V (1843) wifi:update scan history ssid=Airtel_gaur_2614, channel=11
+D (1853) wifi:scan end: arg=0x3fca21e4, status=0, ss_state=0x7
+D (1853) wifi:find first mathched ssid, scan done
+V (1863) wifi:back home chan=<1,0>, current chan=<11,0>
+V (1863) wifi:ht20 freq=2412, chan=1
+D (1873) wifi:filter: set rx policy=4
+D (1873) wifi:first chan=1
+V (1873) wifi:scan_done: arg=0x0, status=0, cur_time=1894097, scan_id=128, scan state=0
+V (1883) wifi:call scan_done cb, arg=0x0
+D (1883) wifi:handoff_cb: status=0
+V (1893) wifi:best bss has set.
+D (1893) wifi:ap found, mac=ec:a2:a0:6d:0a:69
+V (1893) wifi:bssid=ec:a2:a0:6d:0a:69, LR=0
+D (1903) wifi:going for connection with bssid=ec:a2:a0:6d:0a:69
+D (1903) wifi:new_bss=0x3fca0f70, cur_bss=0x0, new_chan=<11,0>, cur_chan=1
+D (1913) wifi:filter: set rx policy=5
+[0;32mI (1913) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+V (1923) wifi:ht20 freq=2462, chan=11
+D (1923) wifi:connect_op: status=0, auth=5, cipher=3 
+D (1933) wifi:auth mode is not none
+D (1933) wifi:connect_bss: auth=1, reconnect=0
+[0;32mI (1943) wifi:state: init -> auth (0xb0)[0m
+D (1943) nvs: nvs_get sta.pwr_reset 1
+D (1943) wifi:start 1000ms AUTH timer
+D (1953) wifi:clear scan ap list
+D (1953) event: no handlers have been registered for event WIFI_EVENT:43 posted to loop 0x3fceb440
+D (1963) i2s_common: rx channel is registered on I2S0 successfully
+[0;33mW (1963) i2s_common: dma frame num is out of dma buffer size, limited to 2046[0m
+D (1973) i2s_common: DMA malloc info: dma_desc_num = 4, dma_desc_buf_size = dma_frame_num * slot_num * data_bit_width = 4092
+D (1983) i2s_pdm: Clock division info: [sclk] 160000000 Hz [mdiv] 19 17/32 [mclk] 8192000 Hz [bdiv] 8 [bclk] 1024000 Hz
+D (1993) gdma: new group (0) at 0x3fcb4188
+D (2003) gdma: new pair (0,0) at 0x3fcb0014
+D (2003) gdma: new rx channel (0,0) at 0x3fcaffd8
+V (2003) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (2013) intr_alloc: esp_intr_alloc_intrstatus (D (1973) wifi:recv auth: seq=2, status=0, algo=0
+[0;32mI (2023) wifi:state: auth -> assoc (0x0)[0m
+cpu 0): Args okay. Resulting flags 0x80E
+D (2033) intr_alloc: Connected src 66 to int 9 (cpu 0)
+D (2023) nvs: nvs_get sta.pwr_reset 1
+D (2043) wifi:restart connect 1000ms timer for assoc
+D (2033) gdma: install interrupt service for rx channel (0,0)
+D (2043) wifi:recv assoc: type=0x10
+D (2053) wifi:filter: set rx policy=6
+[0;32mI (2053) wifi:state: assoc -> run (0x10)[0m
+D (2063) nvs: nvs_get sta.pwr_reset 1
+D (2063) wifi:start 10s connect timer for 4 way handshake
+D (2063) i2s_pdm: The rx channel on I2S0 has been initialized to PDM RX mode successfully
+D (2073) i2s_common: i2s rx channel enabled
+[0;32mI (2083) MIC_STREAM: I2S microphone initialized[0m
+V (2143) wifi:wpa_psk start
+V (2143) wifi:wpa_psk handle succeed
+V (2143) wifi:wpa_psk start
+V (2143) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (2143) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE
+D (2153) intr_alloc: Connected src 77 to int 12 (cpu 0)
+D (2153) gdma: new tx channel (0,0) at 0x3fcc463c
+D (2163) gdma: new pair (0,1) at 0x3fcafea8
+D (2163) gdma: new rx channel (0,1) at 0x3fcc4674
+V (2173) wifi:wpa_psk handle succeed
+[0;32mI (2173) wifi:connected with Airtel_gaur_2614, aid = 1, channel 11, BW20, bssid = ec:a2:a0:6d:0a:69[0m
+[0;32mI (2183) wifi:security: WPA2-PSK, phy: bgn, rssi: -58[0m
+D (2183) wifi:remove all except ec:a2:a0:6d:0a:69 from rc list
+D (2193) wifi:clear blacklist
+D (2193) nvs: nvs_set sta.chan 1 11
+D (2193) nvs: nvs_set_blob sta.apinfo 700
+D (2203) wifi:filter: set rx policy=7
+[0;32mI (2203) wifi:pm start, type: 1[0m
+
+[0;32mI (2203) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2213) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+D (2223) wifi:Send sta connected event
+D (2223) wifi:connect status 1 -> 5
+D (2233) wifi:obss scan is disabled
+D (2233) wifi:start obss scan: obss scan is stopped
+D (2233) wifi:bcnd: 0 -> 2352
+[0;32mI (2243) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+D (2243) event: running post WIFI_EVENT:4 with handler 0x4201470c and context 0x3fcec5fc on loop 0x3fceb440
+V (2253) esp_adapter: thread sem get: sem=0x3fcafdd4
+D (2263) esp_netif_handlers: esp_netif action connected with netif0x3fcec380 from event_id=4
+D (2273) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x420124c0
+D (2273) esp_netif_lwip: esp_netif_up_api esp_netif:0x3fcec380
+D (2283) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+D (2283) esp_netif_lwip: check: remote, if=0x3fcec380 fn=0x42011cac
+D (2293) esp_netif_lwip: esp_netif_dhcpc_start_api esp_netif:0x3fcec380
+D (2293) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcec380
+D (2303) esp_netif_lwip: if0x3fcec380 start ip lost tmr: interval=120
+D (2313) esp_netif_lwip: starting dhcp client
+D (2313) wifi:D (2313) esp_netif_lwip: call api in lwip: ret=0x0, give sem
+eb is dhcp or dns sport = 68, dport = 67
+[0;32mI (2373) wifi:<ba-add>idx:0 (ifx:0, ec:a2:a0:6d:0a:69), tid:0, ssn:2, winSize:64[0m
+D (2403) wifi:eb is dhcp or dns sport = 68, dport = 67
+D (3453) esp_netif_lwip: esp_netif_internal_dhcpc_cb lwip-netif:0x3fcec410
+D (3453) esp_netif_lwip: check: local, if=0x3fcec380 fn=0x42012904
+D (3453) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcec380
+V (3453) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcec380
+D (3463) esp_netif_lwip: if0x3fcec380 ip changed=1
+D (3463) event: running post IP_EVENT:0 with handler 0x42014528 and context 0x3fcec6d0 on loop 0x3fceb440
+D (3473) wifi_init_default: Got IP wifi default handler entered
+D (3483) esp_netif_handlers: esp_netif action got_ip with netif0x3fcec380 from event_id=0
+[0;32mI (3493) esp_netif_handlers: sta ip: 192.168.1.33, mask: 255.255.255.0, gw: 192.168.1.1[0m
+D (4123) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (4123) esp-tls: host:192.168.1.32: strlen 12
+D (4123) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (4133) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (4603) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (4603) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (4613) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (5143) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (5143) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (5143) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (6813) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (6813) esp-tls: host:192.168.1.32: strlen 12
+D (6813) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (6813) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (6843) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (6843) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (6863) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (6973) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (6973) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (6973) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (8733) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (8733) esp-tls: host:192.168.1.32: strlen 12
+D (8733) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (8733) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (8893) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (8893) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (8913) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (9003) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (9003) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (9013) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (10773) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (10773) esp-tls: host:192.168.1.32: strlen 12
+D (10773) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (10783) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (10793) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (10803) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (10813) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (10913) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (10913) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (10913) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (12823) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (12823) esp-tls: host:192.168.1.32: strlen 12
+D (12823) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (12823) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (12893) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (12893) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (12913) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (13003) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (13003) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (13003) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (14743) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (14743) esp-tls: host:192.168.1.32: strlen 12
+D (14743) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (14743) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (14763) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (14763) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (14783) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (14923) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (14923) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (14933) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (16783) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (16783) esp-tls: host:192.168.1.32: strlen 12
+D (16783) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (16793) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (16803) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (16813) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (16823) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (16933) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (16933) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (16933) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (18833) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (18833) esp-tls: host:192.168.1.32: strlen 12
+D (18833) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (18843) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (18853) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (18853) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (18873) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (18993) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (18993) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (18993) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (20753) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (20753) esp-tls: host:192.168.1.32: strlen 12
+D (20753) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (20753) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (20793) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (20793) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (20813) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (21123) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (21123) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (21123) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (22793) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (22793) esp-tls: host:192.168.1.32: strlen 12
+D (22793) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (22803) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (22843) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (22843) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (22863) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (24373) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (24373) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (24373) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (25993) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (25993) esp-tls: host:192.168.1.32: strlen 12
+D (25993) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (26003) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (26103) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (26103) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (26123) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (27373) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (27373) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (27383) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (28803) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (28803) esp-tls: host:192.168.1.32: strlen 12
+D (28803) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (28813) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (28973) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (28973) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (28983) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (29103) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (29113) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (29113) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (30853) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (30853) esp-tls: host:192.168.1.32: strlen 12
+D (30853) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (30863) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (31023) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (31023) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (31043) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (31623) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (31623) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (31623) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (33153) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (33153) esp-tls: host:192.168.1.32: strlen 12
+D (33153) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (33163) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (33273) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (33273) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (33293) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (36503) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (36503) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (36503) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (38143) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (38143) esp-tls: host:192.168.1.32: strlen 12
+D (38143) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (38143) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (38183) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (38183) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (38203) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (38323) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (38323) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (38323) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (40183) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (40183) esp-tls: host:192.168.1.32: strlen 12
+D (40193) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (40193) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (40243) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (40243) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (40253) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (43303) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (43303) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (43303) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (44793) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (44793) esp-tls: host:192.168.1.32: strlen 12
+D (44793) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (44793) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (44843) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (44843) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (44863) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (44983) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (44993) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (44993) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (46833) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (46833) esp-tls: host:192.168.1.32: strlen 12
+D (46843) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (46843) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (46903) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (46903) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (46923) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (47043) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (47053) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (47053) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (48883) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (48883) esp-tls: host:192.168.1.32: strlen 12
+D (48883) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (48893) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (49033) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (49033) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (49053) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (49153) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (49153) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (49153) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (50803) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (50803) esp-tls: host:192.168.1.32: strlen 12
+D (50803) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (50803) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (50813) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (50823) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (50843) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (50973) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (50973) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (50973) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (52843) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (52843) esp-tls: host:192.168.1.32: strlen 12
+D (52853) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (52853) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (53063) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (53063) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (53083) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (55153) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (55153) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (55153) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (56813) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (56813) esp-tls: host:192.168.1.32: strlen 12
+D (56813) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (56813) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (56843) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (56853) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (56863) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (57413) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (57413) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (57413) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (58853) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (58853) esp-tls: host:192.168.1.32: strlen 12
+D (58863) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (58863) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (58873) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (58883) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (58893) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (59013) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (59013) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (59013) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (60903) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (60903) esp-tls: host:192.168.1.32: strlen 12
+D (60903) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (60913) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (60933) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (60933) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (60953) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (61063) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (61063) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (61063) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (62953) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (62953) esp-tls: host:192.168.1.32: strlen 12
+D (62953) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (62953) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (63103) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (63103) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (63113) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (63583) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (63593) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (63593) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (65123) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (65123) esp-tls: host:192.168.1.32: strlen 12
+D (65123) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (65133) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (65143) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (65143) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (65163) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (65273) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (65283) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (65283) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (67173) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (67173) esp-tls: host:192.168.1.32: strlen 12
+D (67173) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (67173) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (67193) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (67193) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (67213) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (67323) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (67323) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (67323) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (69083) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (69083) esp-tls: host:192.168.1.32: strlen 12
+D (69093) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (69093) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (69103) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (69113) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (69123) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (69253) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (69253) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (69253) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (71133) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (71133) esp-tls: host:192.168.1.32: strlen 12
+D (71133) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (71143) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (71163) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (71163) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (71173) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (71293) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (71303) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (71303) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (73183) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (73183) esp-tls: host:192.168.1.32: strlen 12
+D (73183) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (73183) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (73193) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (73203) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (73223) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (73383) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (73383) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (73383) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (75093) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (75093) esp-tls: host:192.168.1.32: strlen 12
+D (75103) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (75103) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (75113) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (75123) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (75133) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (75293) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (75293) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (75293) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (77143) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (77143) esp-tls: host:192.168.1.32: strlen 12
+D (77143) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (77153) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (77163) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (77163) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (77183) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (77343) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (77353) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (77353) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (79193) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (79193) esp-tls: host:192.168.1.32: strlen 12
+D (79193) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (79193) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (79213) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (79213) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (79233) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (79353) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (79353) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (79363) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (81103) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (81103) esp-tls: host:192.168.1.32: strlen 12
+D (81113) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (81113) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (81123) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (81133) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (81153) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (81283) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (81283) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (81283) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (83153) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (83153) esp-tls: host:192.168.1.32: strlen 12
+D (83153) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (83163) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (83173) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (83173) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (83193) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (83323) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (83323) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (83333) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (85203) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (85203) esp-tls: host:192.168.1.32: strlen 12
+D (85203) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (85203) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (85213) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (85223) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (85243) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (85373) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (85373) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (85373) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (87113) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (87113) esp-tls: host:192.168.1.32: strlen 12
+D (87123) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (87123) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (87133) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (87143) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (87153) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (87313) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (87323) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (87323) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (89163) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (89163) esp-tls: host:192.168.1.32: strlen 12
+D (89163) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (89173) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (89183) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (89183) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (89203) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (89333) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (89333) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (89333) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (91083) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (91083) esp-tls: host:192.168.1.32: strlen 12
+D (91083) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (91083) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (91143) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (91143) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (91163) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (91333) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (91333) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (91333) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (93123) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (93133) esp-tls: host:192.168.1.32: strlen 12
+D (93133) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (93133) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (93373) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (93373) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (93393) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (93833) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (93833) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (93833) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (95433) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (95433) esp-tls: host:192.168.1.32: strlen 12
+D (95433) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (95433) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (95443) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (95453) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (95473) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (95593) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (95593) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (95603) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (97343) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (97343) esp-tls: host:192.168.1.32: strlen 12
+D (97353) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (97353) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (97393) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (97393) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (97403) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (97553) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (97563) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (97563) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+D (99393) HTTP_CLIENT: Begin connect to: http://192.168.1.32:5000
+D (99393) esp-tls: host:192.168.1.32: strlen 12
+D (99393) esp-tls: [sock=54] Resolved IPv4 address: 192.168.1.32
+D (99403) esp-tls: [sock=54] Connecting to server. HOST: 192.168.1.32, Port: 5000
+D (99443) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3fceb440
+D (99443) HTTP_CLIENT: Write header[4]: POST /stream HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: 192.168.1.32:5000
+Content-Type: application/octet-stream
+Content-Length: 64000
+
+
+D (99463) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3fceb440
+D (99583) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440
+[0;32mI (99583) MIC_STREAM: 🔊 Sent 2s audio: 64000 bytes[0m
+D (99583) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:7 posted to loop 0x3fceb440

@@ -17,7 +17,7 @@ app.post('/upload', express.raw({ type: 'image/jpeg', limit: '5mb' }), (req, res
 
 app.get('/request-capture', async (req, res) => {
     try {
-        const response = await axios.get('http://192.168.1.16/capture-request');  
+        const response = await axios.get('http://192.168.1.33/capture-request');  
         console.log("ESP32 responded:", response.data);
         res.send("Capture request sent to ESP32");
     } catch (err) {
