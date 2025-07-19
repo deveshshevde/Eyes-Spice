@@ -1,0 +1,654 @@
+Command: /home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/devesh/Desktop/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --decode-coredumps info --target esp32s3 --revision 0 /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/Tovi_V_0_0_1/build/Tovi_V_0_0_1.elf /home/devesh/Desktop/Glasses/Eyes-Spice/Software system/Tovi_V_0_0_1/build/bootloader/bootloader.elf -m '/home/devesh/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/devesh/Desktop/esp-idf/tools/idf.py'
+[0;32mI (114) esp_image: segment 3: paddr=00030020 vaddr=42000020 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420096cb
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1598
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f44
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v6.0-dev-1002-gbfe5caf58f 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Jul 19 2025 17:07:25[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=10114h ( 65812) map[0m
+[0;32mI (99) esp_image: segment 1: paddr=0002013c vaddr=3fc92800 size=034e0h ( 13536) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00023624 vaddr=40374000 size=0c9f4h ( 51700) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=17e38h ( 97848) map[0m
+[0;32mI (132) esp_image: segment 4: paddr=00047e60 vaddr=403809f4 size=01d70h (  7536) load[0m
+[0;32mI (134) esp_image: segment 5: paddr=00049bd8 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (142) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (142) boot: Disabling RNG early entropy source...[0m
+[0;32mI (158) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (158) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (158) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (160) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (164) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (168) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (172) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (177) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (182) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (187) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (192) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (196) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (200) esp_psram: Speed: 40MHz[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (937) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (946) cpu_start: Pro cpu start user code[0m
+[0;32mI (946) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (946) app_init: Application information:[0m
+[0;32mI (946) app_init: Project name:     Tovi_V_0_0_1[0m
+[0;32mI (950) app_init: App version:      b5c2343-dirty[0m
+[0;32mI (954) app_init: Compile time:     Jul 19 2025 17:08:46[0m
+[0;32mI (959) app_init: ELF file SHA256:  762001ea7...[0m
+[0;32mI (964) app_init: ESP-IDF:          v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (969) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (973) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (977) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (981) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (987) heap_init: At 3FC96980 len 00052D90 (331 KiB): RAM[0m
+[0;32mI (992) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (997) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1003) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (1008) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1015) spi_flash: detected chip: gd[0m
+[0;32mI (1018) spi_flash: flash io: dio[0m
+[0;32mI (1021) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1028) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1034) esp_core_dump_uart: Init core dump to UART[0m
+[0;32mI (1039) main_task: Started on CPU0[0m
+[0;32mI (1049) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1049) main_task: Calling app_main()[0m
+[0;32mI (1049) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (1059) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+D (1069) temperature_sensor: s_deltaT = -88
+[0;32mI (1069) TOVI::Profiler: [0m
+[0;32mI (1069) TOVI::Profiler: ==================================================[0m
+[0;32mI (1079) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (1089) TOVI::Profiler: ==================================================[0m
+[0;32mI (1089) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (1099) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (1099) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (1109) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (1109) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (1119) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (1119) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (1129) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (1129) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (1139) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (1139) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (1149) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (1149) TOVI::Profiler: > Internal RAM Free  : 379987 bytes[0m
+[0;32mI (1159) TOVI::Profiler: > Internal RAM Used  : 50788 bytes[0m
+[0;32mI (1169) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (1169) TOVI::Profiler: > Temperature        : 36.80 °C (ROM Sensor)[0m
+[0;32mI (1179) TOVI::Profiler: > Time Since Boot    : 166 ms[0m
+[0;32mI (1179) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (1189) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (1189) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (1199) TOVI::Profiler:  Default heap        : 8733420 free[0m
+[0;32mI (1199) TOVI::Profiler:  Internal RAM        : 379295 free[0m
+[0;32mI (1209) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (1219) TOVI::Profiler:  DMA-Capable         : 371539 free[0m
+[0;32mI (1219) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (1229) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (1229) TOVI::Profiler: ==================================================[0m
+[0;32mI (1239) TOVI::Profiler: [0m
+[0;32mI (1239) main_task: Returned from app_main()[0m
+[0;32mI (6239) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (6239) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (6239) TOVI::Profiler: [0m
+[0;32mI (6239) TOVI::Profiler: ==================================================[0m
+[0;32mI (6249) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (6249) TOVI::Profiler: ==================================================[0m
+[0;32mI (6259) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (6269) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (6269) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (6269) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (6279) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (6289) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (6289) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (6289) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (6299) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (6309) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (6309) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (6309) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (6319) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (6329) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (6329) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (6339) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (6339) TOVI::Profiler: > Time Since Boot    : 5332 ms[0m
+[0;32mI (6349) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (6349) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (6359) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (6369) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (6369) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (6379) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (6379) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (6389) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (6389) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (6399) TOVI::Profiler: ==================================================[0m
+[0;32mI (6399) TOVI::Profiler: [0m
+[0;32mI (11409) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (11409) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (11409) TOVI::Profiler: [0m
+[0;32mI (11409) TOVI::Profiler: ==================================================[0m
+[0;32mI (11419) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (11419) TOVI::Profiler: ==================================================[0m
+[0;32mI (11429) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (11439) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (11439) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (11439) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (11449) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (11459) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (11459) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (11469) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (11469) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (11479) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (11479) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (11489) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (11489) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (11499) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (11499) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (11509) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (11509) TOVI::Profiler: > Time Since Boot    : 10504 ms[0m
+[0;32mI (11519) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (11529) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (11529) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (11539) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (11539) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (11549) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (11549) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (11559) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (11569) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (11569) TOVI::Profiler: ==================================================[0m
+[0;32mI (11579) TOVI::Profiler: [0m
+[0;32mI (16579) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (16579) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (16579) TOVI::Profiler: [0m
+[0;32mI (16579) TOVI::Profiler: ==================================================[0m
+[0;32mI (16589) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (16589) TOVI::Profiler: ==================================================[0m
+[0;32mI (16599) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (16609) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (16609) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (16609) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (16619) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (16629) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (16629) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (16639) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (16639) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (16649) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (16649) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (16659) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (16659) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (16669) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (16669) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (16679) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (16679) TOVI::Profiler: > Time Since Boot    : 15674 ms[0m
+[0;32mI (16689) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (16699) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (16699) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (16709) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (16709) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (16719) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (16719) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (16729) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (16739) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (16739) TOVI::Profiler: ==================================================[0m
+[0;32mI (16749) TOVI::Profiler: [0m
+[0;32mI (21749) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (21749) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (21749) TOVI::Profiler: [0m
+[0;32mI (21749) TOVI::Profiler: ==================================================[0m
+[0;32mI (21759) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (21759) TOVI::Profiler: ==================================================[0m
+[0;32mI (21769) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (21779) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (21779) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (21779) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (21789) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (21799) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (21799) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (21809) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (21809) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (21819) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (21819) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (21829) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (21829) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (21839) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (21839) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (21849) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (21849) TOVI::Profiler: > Time Since Boot    : 20844 ms[0m
+[0;32mI (21859) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (21869) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (21869) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (21879) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (21879) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (21889) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (21889) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (21899) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (21909) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (21909) TOVI::Profiler: ==================================================[0m
+[0;32mI (21919) TOVI::Profiler: [0m
+[0;32mI (26919) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (26919) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (26919) TOVI::Profiler: [0m
+[0;32mI (26919) TOVI::Profiler: ==================================================[0m
+[0;32mI (26929) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (26929) TOVI::Profiler: ==================================================[0m
+[0;32mI (26939) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (26949) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (26949) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (26949) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (26959) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (26969) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (26969) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (26979) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (26979) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (26989) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (26989) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (26999) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (26999) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (27009) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (27009) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (27019) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (27019) TOVI::Profiler: > Time Since Boot    : 26014 ms[0m
+[0;32mI (27029) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (27039) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (27039) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (27049) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (27049) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (27059) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (27059) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (27069) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (27079) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (27079) TOVI::Profiler: ==================================================[0m
+[0;32mI (27089) TOVI::Profiler: [0m
+[0;32mI (32089) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (32089) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (32089) TOVI::Profiler: [0m
+[0;32mI (32089) TOVI::Profiler: ==================================================[0m
+[0;32mI (32099) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (32099) TOVI::Profiler: ==================================================[0m
+[0;32mI (32109) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (32119) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (32119) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (32119) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (32129) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (32139) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (32139) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (32149) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (32149) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (32159) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (32159) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (32169) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (32169) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (32179) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (32179) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (32189) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (32189) TOVI::Profiler: > Time Since Boot    : 31184 ms[0m
+[0;32mI (32199) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (32209) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (32209) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (32219) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (32219) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (32229) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (32229) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (32239) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (32249) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (32249) TOVI::Profiler: ==================================================[0m
+[0;32mI (32259) TOVI::Profiler: [0m
+[0;32mI (37259) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (37259) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (37259) TOVI::Profiler: [0m
+[0;32mI (37259) TOVI::Profiler: ==================================================[0m
+[0;32mI (37269) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (37269) TOVI::Profiler: ==================================================[0m
+[0;32mI (37279) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (37289) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (37289) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (37289) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (37299) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (37309) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (37309) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (37319) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (37319) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (37329) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (37329) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (37339) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (37339) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (37349) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (37349) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (37359) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (37359) TOVI::Profiler: > Time Since Boot    : 36354 ms[0m
+[0;32mI (37369) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (37379) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (37379) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (37389) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (37389) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (37399) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (37399) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (37409) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (37419) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (37419) TOVI::Profiler: ==================================================[0m
+[0;32mI (37429) TOVI::Profiler: [0m
+[0;32mI (42429) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (42429) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (42429) TOVI::Profiler: [0m
+[0;32mI (42429) TOVI::Profiler: ==================================================[0m
+[0;32mI (42439) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (42439) TOVI::Profiler: ==================================================[0m
+[0;32mI (42449) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (42459) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (42459) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (42459) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (42469) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (42479) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (42479) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (42489) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (42489) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (42499) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (42499) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (42509) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (42509) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (42519) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (42519) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (42529) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (42529) TOVI::Profiler: > Time Since Boot    : 41524 ms[0m
+[0;32mI (42539) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (42549) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (42549) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (42559) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (42559) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (42569) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (42569) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (42579) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (42589) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (42589) TOVI::Profiler: ==================================================[0m
+[0;32mI (42599) TOVI::Profiler: [0m
+[0;32mI (47599) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (47599) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (47599) TOVI::Profiler: [0m
+[0;32mI (47599) TOVI::Profiler: ==================================================[0m
+[0;32mI (47609) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (47609) TOVI::Profiler: ==================================================[0m
+[0;32mI (47619) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (47629) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (47629) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (47629) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (47639) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (47649) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (47649) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (47659) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (47659) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (47669) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (47669) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (47679) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (47679) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (47689) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (47689) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (47699) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (47699) TOVI::Profiler: > Time Since Boot    : 46694 ms[0m
+[0;32mI (47709) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (47719) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (47719) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (47729) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (47729) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (47739) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (47739) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (47749) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (47759) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (47759) TOVI::Profiler: ==================================================[0m
+[0;32mI (47769) TOVI::Profiler: [0m
+[0;32mI (52769) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (52769) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (52769) TOVI::Profiler: [0m
+[0;32mI (52769) TOVI::Profiler: ==================================================[0m
+[0;32mI (52779) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (52779) TOVI::Profiler: ==================================================[0m
+[0;32mI (52789) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (52799) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (52799) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (52799) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (52809) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (52819) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (52819) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (52829) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (52829) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (52839) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (52839) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (52849) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (52849) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (52859) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (52859) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (52869) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (52869) TOVI::Profiler: > Time Since Boot    : 51864 ms[0m
+[0;32mI (52879) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (52889) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (52889) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (52899) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (52899) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (52909) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (52909) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (52919) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (52929) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (52929) TOVI::Profiler: ==================================================[0m
+[0;32mI (52939) TOVI::Profiler: [0m
+[0;32mI (57939) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (57939) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (57939) TOVI::Profiler: [0m
+[0;32mI (57939) TOVI::Profiler: ==================================================[0m
+[0;32mI (57949) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (57949) TOVI::Profiler: ==================================================[0m
+[0;32mI (57959) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (57969) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (57969) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (57969) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (57979) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (57989) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (57989) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (57999) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (57999) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (58009) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (58009) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (58019) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (58019) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (58029) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (58029) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (58039) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (58039) TOVI::Profiler: > Time Since Boot    : 57034 ms[0m
+[0;32mI (58049) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (58059) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (58059) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (58069) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (58069) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (58079) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (58079) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (58089) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (58099) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (58099) TOVI::Profiler: ==================================================[0m
+[0;32mI (58109) TOVI::Profiler: [0m
+[0;32mI (63109) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (63109) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (63109) TOVI::Profiler: [0m
+[0;32mI (63109) TOVI::Profiler: ==================================================[0m
+[0;32mI (63119) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (63119) TOVI::Profiler: ==================================================[0m
+[0;32mI (63129) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (63139) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (63139) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (63139) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (63149) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (63159) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (63159) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (63169) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (63169) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (63179) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (63179) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (63189) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (63189) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (63199) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (63199) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (63209) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (63209) TOVI::Profiler: > Time Since Boot    : 62204 ms[0m
+[0;32mI (63219) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (63229) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (63229) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (63239) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (63239) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (63249) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (63249) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (63259) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (63269) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (63269) TOVI::Profiler: ==================================================[0m
+[0;32mI (63279) TOVI::Profiler: [0m
+[0;32mI (68279) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (68279) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (68279) TOVI::Profiler: [0m
+[0;32mI (68279) TOVI::Profiler: ==================================================[0m
+[0;32mI (68289) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (68289) TOVI::Profiler: ==================================================[0m
+[0;32mI (68299) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (68309) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (68309) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (68309) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (68319) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (68329) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (68329) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (68339) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (68339) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (68349) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (68349) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (68359) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (68359) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (68369) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (68369) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (68379) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (68379) TOVI::Profiler: > Time Since Boot    : 67374 ms[0m
+[0;32mI (68389) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (68399) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (68399) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (68409) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (68409) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (68419) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (68419) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (68429) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (68439) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (68439) TOVI::Profiler: ==================================================[0m
+[0;32mI (68449) TOVI::Profiler: [0m
+[0;32mI (73449) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (73449) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (73449) TOVI::Profiler: [0m
+[0;32mI (73449) TOVI::Profiler: ==================================================[0m
+[0;32mI (73459) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (73459) TOVI::Profiler: ==================================================[0m
+[0;32mI (73469) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (73479) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (73479) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (73479) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (73489) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (73499) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (73499) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (73509) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (73509) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (73519) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (73519) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (73529) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (73529) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (73539) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (73539) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (73549) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (73549) TOVI::Profiler: > Time Since Boot    : 72544 ms[0m
+[0;32mI (73559) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (73569) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (73569) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (73579) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (73579) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (73589) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (73589) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (73599) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (73609) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (73609) TOVI::Profiler: ==================================================[0m
+[0;32mI (73619) TOVI::Profiler: [0m
+[0;32mI (78619) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (78619) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (78619) TOVI::Profiler: [0m
+[0;32mI (78619) TOVI::Profiler: ==================================================[0m
+[0;32mI (78629) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (78629) TOVI::Profiler: ==================================================[0m
+[0;32mI (78639) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (78649) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (78649) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (78649) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (78659) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (78669) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (78669) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (78679) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (78679) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (78689) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (78689) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (78699) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (78699) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (78709) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (78709) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (78719) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (78719) TOVI::Profiler: > Time Since Boot    : 77714 ms[0m
+[0;32mI (78729) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (78739) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (78739) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (78749) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (78749) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (78759) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (78759) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (78769) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (78779) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (78779) TOVI::Profiler: ==================================================[0m
+[0;32mI (78789) TOVI::Profiler: [0m
+[0;32mI (83789) TOVI::Profiler: Install temperature sensor, expected temp ranger range: 10~50 ℃[0m
+[0;32mI (83789) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C[0m
+[0;32mI (83789) TOVI::Profiler: [0m
+[0;32mI (83789) TOVI::Profiler: ==================================================[0m
+[0;32mI (83799) TOVI::Profiler:                TOVI SYSTEM PROFILER               [0m
+[0;32mI (83799) TOVI::Profiler: ==================================================[0m
+[0;32mI (83809) TOVI::Profiler: > Chip Model         : esp32s3[0m
+[0;32mI (83819) TOVI::Profiler: > Chip Revision      : 2[0m
+[0;32mI (83819) TOVI::Profiler: > CPU Cores          : 2[0m
+[0;32mI (83819) TOVI::Profiler: > CPU Frequency      : 160 MHz[0m
+[0;32mI (83829) TOVI::Profiler: > IDF Version        : v6.0-dev-1002-gbfe5caf58f[0m
+[0;32mI (83839) TOVI::Profiler: > Wi-Fi Support      : Yes[0m
+[0;32mI (83839) TOVI::Profiler: > Bluetooth Classic  : No[0m
+[0;32mI (83849) TOVI::Profiler: > BLE Support        : Yes[0m
+[0;32mI (83849) TOVI::Profiler: > MAC Address        : D8:3B:DA:47:1C:50[0m
+[0;32mI (83859) TOVI::Profiler: > Flash Size         : 1024 KB[0m
+[0;32mI (83859) TOVI::Profiler: > PSRAM Detected     : 8 MB[0m
+[0;32mI (83869) TOVI::Profiler: > PSRAM Free         : 8386156 bytes[0m
+[0;32mI (83869) TOVI::Profiler: > Internal RAM Free  : 383743 bytes[0m
+[0;32mI (83879) TOVI::Profiler: > Internal RAM Used  : 46992 bytes[0m
+[0;32mI (83879) TOVI::Profiler: > Reset Cause        : 11[0m
+[0;32mI (83889) TOVI::Profiler: > Temperature        : 35.80 °C (ROM Sensor)[0m
+[0;32mI (83889) TOVI::Profiler: > Time Since Boot    : 82884 ms[0m
+[0;32mI (83899) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (83909) TOVI::Profiler:  Heap Summary (by capability):[0m
+[0;32mI (83909) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (83919) TOVI::Profiler:  Default heap        : 8737868 free[0m
+[0;32mI (83919) TOVI::Profiler:  Internal RAM        : 383743 free[0m
+[0;32mI (83929) TOVI::Profiler:  SPIRAM (PSRAM)      : 8386156 free[0m
+[0;32mI (83929) TOVI::Profiler:  DMA-Capable         : 375987 free[0m
+[0;32mI (83939) TOVI::Profiler: --------------------------------------------------[0m
+[0;32mI (83949) TOVI::Profiler:  TOVI profiler complete.[0m
+[0;32mI (83949) TOVI::Profiler: ==================================================[0m
+[0;32mI (83959) TOVI::Profiler: [0m

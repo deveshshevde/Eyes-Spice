@@ -1,0 +1,12 @@
+Command: make -j 6 flash
+/home/devesh/Desktop/esp-idf/components/esp_driver_touch_sens/hw_ver2/touch_version_specific.c:30:9: warning: 'LOG_LOCAL_LEVEL' redefined
+   30 | #define LOG_LOCAL_LEVEL ESP_LOG_DEBUG
+      |         ^~~~~~~~~~~~~~~
+In file included from /home/devesh/Desktop/esp-idf/components/log/include/esp_log_config.h:13,
+                 from /home/devesh/Desktop/esp-idf/components/log/include/esp_log.h:14,
+                 from /home/devesh/Desktop/esp-idf/components/esp_common/include/esp_check.h:9,
+                 from /home/devesh/Desktop/esp-idf/components/esp_driver_touch_sens/hw_ver2/include/../../common/touch_sens_private.h:20,
+                 from /home/devesh/Desktop/esp-idf/components/esp_driver_touch_sens/hw_ver2/touch_version_specific.c:26:
+/home/devesh/Desktop/esp-idf/components/log/include/esp_log_level.h:57:9: note: this is the location of the previous definition
+   57 | #define LOG_LOCAL_LEVEL  CONFIG_LOG_MAXIMUM_LEVEL
+      |         ^~~~~~~~~~~~~~~

@@ -1,20 +1,30 @@
 #include <stdio.h>
+
 #include "esp_system.h"
-#include "esp_log.h"
 #include "esp_chip_info.h"
+#include "esp_idf_version.h"
+
+#include "esp_log.h"
+
 #include "esp_heap_caps.h"
 #include "esp_psram.h"
-#include "esp_task_wdt.h"
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "esp_idf_version.h"
-#include "esp_mac.h"
-#include "esp_partition.h"
+
 #include "esp_flash.h"
+#include "esp_partition.h"
+
+#include "esp_mac.h"
+
 #include "esp_timer.h"
 #include "esp_sleep.h"
 #include "esp_rom_sys.h"
+
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+
+#include "esp_task_wdt.h"
+
 #include "driver/temperature_sensor.h"
+
 
 #define TAG "TOVI::Profiler"
 
