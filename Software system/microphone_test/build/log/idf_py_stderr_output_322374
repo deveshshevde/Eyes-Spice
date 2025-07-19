@@ -1,9 +1,0 @@
-Command: make -j 6 flash
-/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/main/microphone_test.c:407:10: fatal error: esp_http_server.h: No such file or directory
-  407 | #include "esp_http_server.h"
-      |          ^~~~~~~~~~~~~~~~~~~
-compilation terminated.
-make[3]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj] Error 1
-make[2]: *** [CMakeFiles/Makefile2:5957: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
-make[1]: *** [CMakeFiles/Makefile2:2540: CMakeFiles/flash.dir/rule] Error 2
-make: *** [Makefile:286: flash] Error 2

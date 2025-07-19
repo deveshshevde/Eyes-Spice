@@ -71,17 +71,13 @@ esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj: /home/devesh/Deskt
   /home/devesh/Desktop/esp-idf/components/esp_common/include/esp_idf_version.h \
   /home/devesh/Desktop/esp-idf/components/esp_common/include/esp_macros.h \
   /home/devesh/Desktop/esp-idf/components/esp_common/include/esp_types.h \
-  /home/devesh/Desktop/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
-  /home/devesh/Desktop/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
   /home/devesh/Desktop/esp-idf/components/esp_driver_i2s/include/driver/i2s_common.h \
   /home/devesh/Desktop/esp-idf/components/esp_driver_i2s/include/driver/i2s_pdm.h \
   /home/devesh/Desktop/esp-idf/components/esp_driver_i2s/include/driver/i2s_types.h \
   /home/devesh/Desktop/esp-idf/components/esp_event/include/esp_event.h \
   /home/devesh/Desktop/esp-idf/components/esp_event/include/esp_event_base.h \
   /home/devesh/Desktop/esp-idf/components/esp_http_client/include/esp_http_client.h \
-  /home/devesh/Desktop/esp-idf/components/esp_http_server/include/esp_http_server.h \
   /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_cpu.h \
-  /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_etm.h \
   /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_interface.h \
   /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
   /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
@@ -93,7 +89,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj: /home/devesh/Deskt
   /home/devesh/Desktop/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h \
   /home/devesh/Desktop/esp-idf/components/esp_netif/include/esp_netif_types.h \
   /home/devesh/Desktop/esp-idf/components/esp_partition/include/esp_partition.h \
-  /home/devesh/Desktop/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
   /home/devesh/Desktop/esp-idf/components/esp_rom/include/esp_rom_sys.h \
   /home/devesh/Desktop/esp-idf/components/esp_system/include/esp_private/crosscore_int.h \
   /home/devesh/Desktop/esp-idf/components/esp_system/include/esp_system.h \
@@ -126,7 +121,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj: /home/devesh/Deskt
   /home/devesh/Desktop/esp-idf/components/hal/include/hal/i2s_types.h \
   /home/devesh/Desktop/esp-idf/components/heap/include/esp_heap_caps.h \
   /home/devesh/Desktop/esp-idf/components/heap/include/multi_heap.h \
-  /home/devesh/Desktop/esp-idf/components/http_parser/http_parser.h \
   /home/devesh/Desktop/esp-idf/components/log/include/esp_log.h \
   /home/devesh/Desktop/esp-idf/components/log/include/esp_log_args.h \
   /home/devesh/Desktop/esp-idf/components/log/include/esp_log_attr.h \
@@ -183,7 +177,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj: /home/devesh/Deskt
   /home/devesh/Desktop/esp-idf/components/nvs_flash/include/nvs_flash.h \
   /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
   /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
-  /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
   /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
   /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/soc.h \
   /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
@@ -223,8 +216,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj: /home/devesh/Deskt
 /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/soc.h:
 
 /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h:
-
-/home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h:
 
 /home/devesh/Desktop/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h:
 
@@ -288,22 +279,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj: /home/devesh/Deskt
 
 /home/devesh/Desktop/esp-idf/components/log/include/esp_log_level.h:
 
-/home/devesh/Desktop/esp-idf/components/log/include/esp_log_format.h:
-
-/home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/memp.h:
-
-/home/devesh/Desktop/esp-idf/components/log/include/esp_log_config.h:
-
-/home/devesh/Desktop/esp-idf/components/log/include/esp_log_color.h:
-
-/home/devesh/Desktop/esp-idf/components/lwip/port/include/sockets_ext.h:
-
-/home/devesh/Desktop/esp-idf/components/log/include/esp_log_buffer.h:
-
-/home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:
-
-/home/devesh/Desktop/esp-idf/components/log/include/esp_log_attr.h:
-
 /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/types.h:
 
 /home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/pbuf.h:
@@ -326,6 +301,10 @@ esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj: /home/devesh/Deskt
 
 /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/time.h:
 
+/home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/memp.h:
+
+/home/devesh/Desktop/esp-idf/components/log/include/esp_log_config.h:
+
 /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/_sigset.h:
 
 /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/types.h:
@@ -339,6 +318,10 @@ esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj: /home/devesh/Deskt
 /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h:
 
 /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/limits.h:
+
+/home/devesh/Desktop/esp-idf/components/lwip/port/include/sockets_ext.h:
+
+/home/devesh/Desktop/esp-idf/components/log/include/esp_log_buffer.h:
 
 /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h:
 
@@ -430,11 +413,19 @@ esp-idf/main/CMakeFiles/__idf_main.dir/microphone_test.c.obj: /home/devesh/Deskt
 
 /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h:
 
-/home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_etm.h:
-
 /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/select.h:
 
 /home/devesh/Desktop/esp-idf/components/heap/include/multi_heap.h:
+
+/home/devesh/Desktop/esp-idf/components/log/include/esp_log_format.h:
+
+/home/devesh/Desktop/esp-idf/components/soc/esp32s3/register/soc/reg_base.h:
+
+/home/devesh/Desktop/esp-idf/components/esp_rom/include/esp_rom_sys.h:
+
+/home/devesh/Desktop/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:
+
+/home/devesh/Desktop/esp-idf/components/log/include/esp_log_attr.h:
 
 /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h:
 
@@ -506,16 +497,6 @@ config/sdkconfig.h:
 
 /home/devesh/Desktop/esp-idf/components/esp_common/include/esp_macros.h:
 
-/home/devesh/Desktop/esp-idf/components/soc/esp32s3/register/soc/reg_base.h:
-
-/home/devesh/Desktop/esp-idf/components/esp_rom/include/esp_rom_sys.h:
-
-/home/devesh/Desktop/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h:
-
-/home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/string.h:
-
-/home/devesh/Desktop/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/projdefs.h:
-
 /home/devesh/Desktop/esp-idf/components/esp_driver_i2s/include/driver/i2s_common.h:
 
 /home/devesh/Desktop/esp-idf/components/esp_driver_i2s/include/driver/i2s_pdm.h:
@@ -528,29 +509,17 @@ config/sdkconfig.h:
 
 /home/devesh/Desktop/esp-idf/components/esp_http_client/include/esp_http_client.h:
 
-/home/devesh/Desktop/esp-idf/components/esp_http_server/include/esp_http_server.h:
-
-/home/devesh/Desktop/Glasses/Eyes-Spice/Software\ system/microphone_test/main/microphone_test.c:
-
-/home/devesh/Desktop/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:
-
 /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_intr_types.h:
 
 /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_interface.h:
 
 /home/devesh/Desktop/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
 
-/home/devesh/Desktop/esp-idf/components/esp_rom/include/esp_rom_gpio.h:
-
-/home/devesh/Desktop/esp-idf/components/http_parser/http_parser.h:
-
 /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:
 
 /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:
 
 /home/devesh/Desktop/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:
-
-/home/devesh/Desktop/esp-idf/components/esp_driver_gpio/include/driver/gpio.h:
 
 /home/devesh/Desktop/esp-idf/components/esp_hw_support/include/esp_random.h:
 
@@ -596,9 +565,17 @@ config/sdkconfig.h:
 
 /home/devesh/Desktop/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:
 
+/home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/string.h:
+
+/home/devesh/Desktop/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/projdefs.h:
+
 /home/devesh/Desktop/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:
 
 /home/devesh/Desktop/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portbenchmark.h:
+
+/home/devesh/Desktop/Glasses/Eyes-Spice/Software\ system/microphone_test/main/microphone_test.c:
+
+/home/devesh/Desktop/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:
 
 /home/devesh/Desktop/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:
 
@@ -617,3 +594,5 @@ config/sdkconfig.h:
 /home/devesh/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/signal.h:
 
 /home/devesh/Desktop/esp-idf/components/heap/include/esp_heap_caps.h:
+
+/home/devesh/Desktop/esp-idf/components/log/include/esp_log_color.h:

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/devesh/Desktop/Glasses/Eyes-Spice/.git/HEAD"
-  "/home/devesh/Desktop/Glasses/Eyes-Spice/.git/logs/refs/heads/main"
+  "/home/devesh/Desktop/Glasses/Eyes-Spice/.git/refs/heads/main"
   "/home/devesh/Desktop/Glasses/Eyes-Spice/Software system/microphone_test/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeASMCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
